@@ -4,11 +4,25 @@
 
 ## Sommaire
 
+- [Documents prioritaires EHDS (France)](#documents-prioritaires-ehds-france)
 - [FR Core](#fr-core)
 - [Guides référentiels (ANS)](#guides-référentiels-ans)
 - [Guides projet (ANS)](#guides-projet-ans)
 - [Autres / transversaux](#autres--transversaux)
 - [Repos Interop'Santé](#repos-interopsanté)
+
+## Documents prioritaires EHDS (France)
+
+L'EHDS (European Health Data Space) impose la production de 6 catégories de documents de santé en FHIR. Source : <https://esante.gouv.fr/espace-europeen-donnees-sante>. Mappage avec les IGs français connus :
+
+| Document EHDS | IG / repo français correspondant | Statut |
+|---|---|---|
+| Patient Summary (équivalent européen du Volet de Synthèse Médicale) | `interop-ig-fhir-document-patient-summary` | WIP — voir note VSM plus bas |
+| Prescription électronique | `interop-ig-fhir-ePrescription` | Draft |
+| Dispensation électronique | `interop-ig-fhir-edispensation` | — |
+| Compte-rendu de biologie médicale | `interop-ig-document-cr-bio` | À confirmer si nativement FHIR ou encore CDA |
+| Lettre de sortie d'hospitalisation | Repo non identifié avec certitude — probablement dans la famille "document-core" (voir ci-dessous), à vérifier | Non confirmé |
+| Compte-rendu d'imagerie médicale et images médicales | Repo non identifié avec certitude | Non confirmé |
 
 ## FR Core
 
@@ -64,7 +78,7 @@ Spécifiques à un périmètre métier donné.
 | Traçabilité DMI | `interop-ig-fhir-tracabilite-dmi` | Traçabilité des Dispositifs Médicaux Implantables |
 | Veille sanitaire | `IG-fhir-veille-sanitaire` | Surveillance sanitaire |
 | Document Core (famille) | `interop-IG-metier-document-core`, `interop-IG-fhir-document-core`, `interop-IG-cda-document-core` | Modélisation générique de document (métier/FHIR/CDA), socle pour les comptes-rendus |
-| Compte-rendu biologie | `interop-ig-document-cr-bio` | Compte-rendu de biologie — seul CR nommément confirmé à ce jour (imagerie/cancérologie : voir zones d'incertitude dans SKILL.md) |
+| Compte-rendu biologie | `interop-ig-document-cr-bio` | Compte-rendu de biologie — document EHDS, voir table "Documents prioritaires EHDS" ci-dessus |
 | Patient Summary / VSM (FHIR) | `interop-ig-fhir-document-patient-summary` | Statut WIP. C'est la trajectoire FHIR du **Volet de Synthèse Médicale** (VSM, aujourd'hui encore en CDA R2), portée par l'obligation EHDS de produire ce document en FHIR. ⚠️ **Ne pas confondre** avec `interop-ig-document-patient-summary` (ancien nom de repo, remplacé — ne plus citer comme repo courant) |
 
 ## Repos Interop'Santé
@@ -81,6 +95,7 @@ Org GitHub : `Interop-Sante`.
 
 ## TODO de vérification
 
-- [ ] Rechercher sur `github.com/ansforge` des IGs imagerie/cancérologie sous des noms non évidents (168 repos au total, recherche par mot-clé uniquement effectuée à ce jour).
-- [ ] Identifier les 5 autres documents que l'EHDS impose en FHIR, au-delà du VSM/Patient Summary (voir `versions-fhir.md`) — ne pas deviner, rechercher avant d'affirmer.
+- [ ] Identifier le repo FHIR français pour la "lettre de sortie d'hospitalisation" et pour le "compte-rendu d'imagerie médicale et images médicales" (2 des 6 documents EHDS, voir table ci-dessus) — rechercher sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
+- [ ] Rechercher si un IG FHIR dédié à la cancérologie existe (hors périmètre EHDS, simple hypothèse non confirmée lors de la dernière revue).
+- [ ] Confirmer si `interop-ig-document-cr-bio` est nativement FHIR ou encore porté en CDA.
 - [ ] Revérifier tous les statuts/versions listés ci-dessus contre <https://interop.esante.gouv.fr/ig/fhir/>.

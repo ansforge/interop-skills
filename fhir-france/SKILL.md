@@ -49,7 +49,7 @@ Deux organisations principales publient des IGs FHIR pour la France :
 - **Interop'Santé** (association HL7 France, `github.com/Interop-Sante`) maintient notamment **FR Core** (`hl7.fhir.fr.core`), le socle de profils de base (Patient, Practitioner, Organization, Encounter, Observation...), les identifiants français (INS, RPPS, ADELI, FINESS) et les terminologies de référence (CIM-10, CCAM, NABM). Version publiée actuelle : 2.2.0, final-text, active depuis 2026-03-25.
 - **ANS** (`github.com/ansforge`) publie et maintient un catalogue organisé en **guides référentiels** (volets transversaux, réutilisables par plusieurs métiers — ex. Partage de Documents de Santé en mobilité/PDSm, Mesures de santé, Cercle de Soins, Cahier de Liaison) et **guides projet** (spécifiques à un périmètre métier — ex. Annuaire Santé, ROR, ECLAIRE, SAS, MSSanté).
 
-Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 documents de santé en FHIR — dont le VSM/Patient Summary (`interop-ig-fhir-document-patient-summary`, successeur FHIR direct du VSM aujourd'hui en CDA R2).
+Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 catégories de documents de santé en FHIR : Patient Summary (VSM), prescription électronique, dispensation électronique, compte-rendu de biologie, lettre de sortie d'hospitalisation, compte-rendu d'imagerie médicale et images médicales. Mappage détaillé avec les IGs français : `references/catalogue-igs.md`.
 
 Table complète (IGs, statuts, versions, mainteneurs, URLs) : `references/catalogue-igs.md`.
 
@@ -76,8 +76,8 @@ Composition complète des comités, tableau de correspondance statut CI-SIS ↔ 
 
 Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
-- **IGs biologie / imagerie / cancérologie** : seule la biologie est confirmée nommément (`interop-ig-document-cr-bio`, compte-rendu biologie). Pas de repo identifié avec certitude sous un nom équivalent pour l'imagerie ou la cancérologie — à rechercher directement sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
-- **Les 5 autres documents EHDS-FHIR** : l'EHDS (European Health Data Space) impose la production de 6 documents de santé en FHIR, dont le VSM/Patient Summary (confirmé, voir `references/catalogue-igs.md`) — mais les 5 autres documents ne sont pas identifiés avec certitude ici. Ne pas deviner leur nom ; les rechercher avant de répondre si la question porte dessus.
+- **Repos français pour 2 des 6 documents EHDS** : la liste des 6 documents EHDS est désormais confirmée (voir ci-dessus et `references/catalogue-igs.md`), mais le repo FHIR français précis n'est pas identifié avec certitude pour la "lettre de sortie d'hospitalisation" et le "compte-rendu d'imagerie médicale" — à rechercher sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
+- **IG cancérologie** : simple hypothèse non confirmée lors de la dernière revue (hors périmètre EHDS) — à vérifier avant de citer un nom de repo précis.
 
 ## 6. Comment mettre à jour ce skill
 

@@ -53,7 +53,16 @@ Ce n'est plus un sujet de veille autonome centré sur l'ANS : la position à sui
 
 Le règlement européen EHDS (European Health Data Space) base actuellement ses actes d'exécution sur FHIR R4 également. **La position française suit cet alignement européen plutôt qu'un calendrier propre à l'ANS** : pour savoir si/quand passer à R5 ou R6, c'est la position de l'EHDS qu'il faut surveiller en priorité (voir checklist dans `SKILL.md`), pas une éventuelle concertation R6 ANS isolée.
 
-Au-delà de la version FHIR, l'EHDS impose aussi la production de **6 documents de santé en FHIR**, dont le VSM/Patient Summary (porté en France par `interop-ig-fhir-document-patient-summary`, statut WIP — voir `catalogue-igs.md`). Cette obligation de calendrier explique pourquoi plusieurs IGs français sont actuellement en statut Draft/WIP. Les 5 autres documents imposés par l'EHDS ne sont pas identifiés avec certitude ici — à rechercher avant d'affirmer lesquels ils sont.
+Au-delà de la version FHIR, l'EHDS impose aussi la production de **6 catégories de documents de santé en FHIR** (source : <https://esante.gouv.fr/espace-europeen-donnees-sante>) :
+
+1. Patient Summary (équivalent européen du Volet de Synthèse Médicale)
+2. Prescription électronique
+3. Dispensation électronique
+4. Compte-rendu de biologie médicale
+5. Lettre de sortie d'hospitalisation
+6. Compte-rendu d'imagerie médicale et images médicales
+
+Cette obligation de calendrier explique pourquoi plusieurs IGs français sont actuellement en statut Draft/WIP. Mappage avec les IGs français connus, et repos restant à identifier pour certains de ces documents : voir `catalogue-igs.md`.
 
 ## Autres sources ANS confirmant R4 comme norme
 
