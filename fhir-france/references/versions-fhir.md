@@ -41,6 +41,7 @@ Ce n'est plus un sujet de veille autonome centré sur l'ANS : la position à sui
 **Point de méthode rappelé par l'ANS** : l'interopérabilité n'est pas d'abord une problématique de version ou de standard technique — c'est avant tout une problématique de modélisation de données, qui nécessite un travail collectif pour identifier les cas d'usage prioritaires et les données essentielles à échanger.
 
 ### Sources citées par la page de concertation
+
 - <https://confluence.hl7.org/display/FHIRI/FHIR+IG+version+support>
 - <https://fire.ly/blog/fhir-r5-is-finally-on-the-shelves-but-should-you-implement-it>
 - <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10148270>
