@@ -22,17 +22,20 @@ FHIR core a été conçu comme foncièrement générique (très peu de champs ob
 **Pourquoi ne pas migrer vers R5 (au moment de la concertation)** :
 - R5 n'est **pas rétrocompatible** avec R4 → coûts de migration élevés (spécifications ET implémentations).
 - Risque de coexistence R4/R5 dans l'écosystème : coûts de double maintenance pour les établissements de santé, confusion pour les nouveaux entrants dans l'interopérabilité (faut-il utiliser R4 ou R5 ?).
-- Délais très longs pour migrer l'existant ou obtenir les premières spécifications en R5 — créer/mettre à jour un IG est un cycle itératif de plusieurs mois/années : (1) identification du besoin fonctionnel, (2) création/MAJ de l'IG, (3) concertation de 3 mois, (4) traitement des commentaires, (5) release, (6) implémentation, (7) retours/amélioration continue. Le temps d'arriver aux premières implémentations R5, la concertation pour **R6** serait probablement déjà lancée (annoncée "attendue mi-2024" dans la page d'origine — à vérifier si elle a eu lieu).
+- Délais très longs pour migrer l'existant ou obtenir les premières spécifications en R5 — créer/mettre à jour un IG est un cycle itératif de plusieurs mois/années : (1) identification du besoin fonctionnel, (2) création/MAJ de l'IG, (3) concertation de 3 mois, (4) traitement des commentaires, (5) release, (6) implémentation, (7) retours/amélioration continue.
 - Avis externe : Grahame Grieve (directeur produit FHIR, HL7) n'encourage pas particulièrement le passage à R5. Les USA n'ont pas prévu de passer à R5 non plus, sauf quelques cas d'usage marginaux.
 
 **Pourquoi R5 reste intéressant ponctuellement** :
 - Documentation améliorée (à regarder pour éclaircissements sur des points précis).
 - Certains cas d'usage dont les ressources ont beaucoup évolué entre R4 et R5 — exemple cité : les produits médicamenteux (medicinal products).
 
-**Trajectoire retenue par l'ANS** :
-1. Continuer à utiliser R4 par défaut ; utiliser, le cas échéant, des extensions R4 qui imitent les nouveaux attributs R5, pour faciliter une transition future.
+**Trajectoire retenue** :
+1. Continuer à utiliser R4 par défaut ; utiliser, le cas échéant, des extensions R4 qui imitent les nouveaux attributs/ressources R5, pour faciliter une transition future.
 2. Étudier la pertinence de R5 au cas par cas : les ressources concernées ont-elles beaucoup gagné en maturité ? Y a-t-il un besoin d'échanges internationaux nécessitant R5 ? Peut-on se passer de l'héritage de l'écosystème R4 pour ce cas d'usage précis ?
-3. Anticiper l'usage de R6 dès sa sortie, avec un focus sur FrCore en R6 et la mise à jour/déploiement de nouveaux guides d'implémentation en R6.
+
+Ce n'est plus un sujet de veille autonome : la position à suivre est celle de l'**EHDS**, qui impose R4 pour ses actes d'exécution (voir plus bas) — c'est cet alignement européen qui dicte la trajectoire française, pas une concertation R6 propre à l'ANS.
+
+**IG cross-version R5↔R4** (<https://hl7.org/fhir/uv/xver-r5.r4>) : ce guide d'implémentation HL7 international réduit encore l'intérêt de migrer vers R5 ou R6, puisqu'il permet de porter de nouveaux attributs/ressources R5 en R4 via des extensions standardisées — exactement le mécanisme envisagé au point 1 ci-dessus, mais désormais outillé par un IG dédié plutôt que par des extensions ad hoc.
 
 **Point de méthode rappelé par l'ANS** : l'interopérabilité n'est pas d'abord une problématique de version ou de standard technique — c'est avant tout une problématique de modélisation de données, qui nécessite un travail collectif pour identifier les cas d'usage prioritaires et les données essentielles à échanger.
 
@@ -44,9 +47,9 @@ FHIR core a été conçu comme foncièrement générique (très peu de champs ob
 - <https://wiki.ihe.net/index.php/Guidance_on_writing_Profiles_of_FHIR>
 - <https://wiki.ihe.net/index.php/Profiles>
 
-## Alignement européen (EHDS)
+## Alignement européen (EHDS) — le signal à suivre pour R4/R5/R6
 
-Le règlement européen EHDS (European Health Data Space) base actuellement ses actes d'exécution sur FHIR R4 également — ce choix pourrait évoluer, à surveiller en parallèle du choix français.
+Le règlement européen EHDS (European Health Data Space) base actuellement ses actes d'exécution sur FHIR R4 également. **La position française suit cet alignement européen plutôt qu'un calendrier propre à l'ANS** : pour savoir si/quand passer à R5 ou R6, c'est la position de l'EHDS qu'il faut surveiller en priorité (voir checklist dans `SKILL.md`), pas une éventuelle concertation R6 ANS isolée.
 
 Au-delà de la version FHIR, l'EHDS impose aussi la production de **6 documents de santé en FHIR**, dont le VSM/Patient Summary (porté en France par `interop-ig-fhir-document-patient-summary`, statut WIP — voir `catalogue-igs.md`). Cette obligation de calendrier explique pourquoi plusieurs IGs français sont actuellement en statut Draft/WIP. Les 5 autres documents imposés par l'EHDS ne sont pas identifiés avec certitude ici — à rechercher avant d'affirmer lesquels ils sont.
 
@@ -58,5 +61,5 @@ Au-delà de la version FHIR, l'EHDS impose aussi la production de **6 documents 
 
 ## TODO de vérification
 
-- [ ] Vérifier si une concertation ou une doctrine publiée sur R6 existe désormais (annoncée "mi-2024" dans la page d'origine).
+- [ ] Vérifier si l'EHDS a changé sa position sur la version FHIR imposée (R4 actuellement) — c'est le signal qui prime pour une éventuelle évolution vers R5/R6.
 - [ ] Revisiter la page de concertation directement dans un navigateur si une citation exacte/complète est nécessaire (le fetch automatisé ne restitue que le titre, la page étant en JavaScript).
