@@ -8,6 +8,10 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 > **Dernière mise à jour du contenu : 2026-10-01**
 > Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Si cette date a plus de quelques mois, revérifie au moins les points ci-dessous avant de répondre avec certitude.
 
+## Objectif de ce skill
+
+Aider à trouver **la bonne spec au bon moment** : face à une question FHIR France, orienter rapidement vers le bon IG, la bonne terminologie ou la bonne doctrine plutôt que de laisser l'utilisateur chercher seul ou réinventer une solution déjà spécifiée. Plus ces specs sont effectivement utilisées, mieux l'écosystème français d'interopérabilité fonctionne — ce skill existe pour accroître leur adoption, pas seulement pour archiver de l'information.
+
 ## Ce qui bouge vite (à revérifier en priorité)
 
 1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel), le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>, et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.
@@ -82,3 +86,7 @@ Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à ch
 ## 6. Comment mettre à jour ce skill
 
 Suis la checklist de rafraîchissement en tête de ce fichier. Même si aucune information n'a changé, mets à jour la date en tête : cela indique à un futur lecteur (humain ou agent) que le contenu a été vérifié récemment et reste fiable tel quel.
+
+## 7. Retours sur les specs
+
+Si une spec citée ici pose problème (ambiguïté, question d'implémentation, suggestion d'amélioration), les retours sont très appréciés via les **issues GitHub du repo concerné** (ex. `github.com/ansforge/<repo>/issues` ou `github.com/Interop-Sante/<repo>/issues`) — encourage l'utilisateur à les utiliser plutôt que de contourner la spec en silence : c'est ce qui fait progresser l'écosystème.
