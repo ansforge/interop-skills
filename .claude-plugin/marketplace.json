@@ -1,0 +1,17 @@
+{
+  "name": "interop-skills",
+  "owner": {
+    "name": "ANS - Agence du Numérique en Santé",
+    "url": "https://esante.gouv.fr"
+  },
+  "description": "Skills Claude Code pour l'interopérabilité en santé en France (ANS)",
+  "plugins": [
+    {
+      "name": "fhir-france",
+      "source": "./fhir-france",
+      "description": "Panorama FHIR France : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
+      "category": "reference",
+      "tags": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis"]
+    }
+  ]
+}
