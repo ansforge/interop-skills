@@ -15,14 +15,14 @@
 
 L'EHDS (European Health Data Space) impose la production de 6 catégories de documents de santé en FHIR. Source : <https://esante.gouv.fr/espace-europeen-donnees-sante>. Mappage avec les IGs français connus :
 
-| Document EHDS | IG / repo français correspondant | Statut |
-|---|---|---|
-| Patient Summary (équivalent européen du Volet de Synthèse Médicale) | `interop-ig-fhir-document-patient-summary` | WIP — voir note VSM plus bas |
-| Prescription électronique | `interop-ig-fhir-ePrescription` | Draft |
-| Dispensation électronique | `interop-ig-fhir-edispensation` | — |
-| Compte-rendu de biologie médicale | `interop-ig-document-cr-bio` | À confirmer si nativement FHIR ou encore CDA |
-| Lettre de sortie d'hospitalisation | Pas encore créé à la date de MAJ de ce fichier | Reste à développer |
-| Compte-rendu d'imagerie médicale et images médicales | Pas encore créé à la date de MAJ de ce fichier | Reste à développer |
+| Document EHDS | IG / repo français correspondant | Statut | Note |
+|---|---|---|---|
+| Patient Summary (équivalent européen du Volet de Synthèse Médicale) | `interop-ig-fhir-document-patient-summary` | WIP | Voir note VSM plus bas |
+| Prescription électronique | `interop-ig-fhir-ePrescription` | Draft | — |
+| Dispensation électronique | `interop-ig-fhir-edispensation` | — | — |
+| Compte-rendu de biologie médicale | `interop-ig-document-cr-bio` | — | À confirmer si nativement FHIR ou encore CDA |
+| Lettre de sortie d'hospitalisation | — | Pas encore créé à la date de MAJ | — |
+| Compte-rendu d'imagerie médicale et images médicales | — | Pas encore créé à la date de MAJ | — |
 
 ## FR Core
 

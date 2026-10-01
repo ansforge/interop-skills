@@ -1,6 +1,6 @@
 ---
 name: fhir-france
-description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs de projets d'interopérabilité en santé : version FHIR à utiliser (R4 vs R5 vs R6), catalogue des IGs FHIR publiés (FR Core, guides référentiels et guides projet ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, statuts de publication). Utilise ce skill proactivement dès que l'utilisateur pose une question sur FHIR en France — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS — même si la question est formulée de façon générale ou si aucun IG n'est nommé explicitement. Le contenu date vite : vérifie toujours le bloc de date en tête du SKILL.md avant de répondre, et revérifie les sources si la date est ancienne.
+description: "Explique l'écosystème FHIR en France pour l'ANS et les porteurs de projets d'interopérabilité en santé — version FHIR à utiliser (R4 vs R5 vs R6), catalogue des IGs FHIR publiés (FR Core, guides référentiels et guides projet ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, statuts de publication). Utilise ce skill proactivement dès que l'utilisateur pose une question sur FHIR en France — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS — même si la question est formulée de façon générale ou si aucun IG n'est nommé explicitement. Le contenu date vite : vérifie toujours le bloc de date en tête du SKILL.md avant de répondre, et revérifie les sources si la date est ancienne."
 ---
 
 # FHIR en France
@@ -17,7 +17,7 @@ Aider à trouver **la bonne spec au bon moment** : face à une question FHIR Fra
 ## Ce qui bouge vite (à revérifier en priorité)
 
 1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel), le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>, et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.
-2. **Décision R4 vs R5/R6** — la concertation ANS "FHIR R5 ou R4" (25/10/2023 → 25/01/2024) a été consultée intégralement ; le choix R4 est confirmé et sourcé (voir `references/versions-fhir.md`). La stratégie de suivi n'est plus de traquer une éventuelle concertation R6 ANS isolément : la France aligne sa position sur celle de l'**EHDS**, qui impose R4 — c'est donc le signal EHDS qu'il faut surveiller, pas un calendrier R6 propre à l'ANS.
+2. **Décision R4 vs R5/R6** — confirmée et sourcée (voir section 1 ci-dessous et `references/versions-fhir.md`). Le signal à surveiller est la position de l'EHDS, pas une concertation R6 ANS isolée.
 3. **Version des terminologies NOS** — <https://interop.esante.gouv.fr/terminologies>
 
 ## Checklist de rafraîchissement
@@ -34,20 +34,11 @@ Aider à trouver **la bonne spec au bon moment** : face à une question FHIR Fra
 
 ## 1. Quelle version FHIR utiliser en France
 
-**R4 (4.0.1) est la version à utiliser par défaut.** Ce n'est pas qu'une recommandation de bonnes pratiques : c'est un choix de doctrine explicitement tranché par l'ANS à l'issue d'une concertation publique dédiée ("FHIR R5 ou R4", 25/10/2023 → 25/01/2024), dont le contenu intégral a été vérifié.
+**R4 (4.0.1) est la version à utiliser par défaut.** Choix tranché par l'ANS à l'issue d'une concertation publique dédiée ("FHIR R5 ou R4", 25/10/2023 → 25/01/2024) : R5 n'est pas rétrocompatible et migrer coûterait cher pour un bénéfice limité, d'autant que l'IG HL7 international **cross-version R5↔R4** (<https://hl7.org/fhir/uv/xver-r5.r4>) permet déjà de porter de nouveaux attributs/ressources R5 en R4 via des extensions standardisées.
 
-Pourquoi R4 et pas R5 :
-- Tout l'écosystème français est déjà en R4 : FrCore (Interop'Santé), les volets CI-SIS (agenda, mesures, cercle de soins, cahier de liaison...), les projets nationaux (Mon Espace Santé, Annuaire Santé, ROR, SAS, SMT), et la majorité des pays voisins/projets européens (HL7 Europe, UK, Allemagne, Suisse, IHE).
-- R5 n'est **pas rétrocompatible** avec R4 — migrer engendrerait des coûts de migration élevés, un risque de coexistence R4/R5 dans l'écosystème (double maintenance pour les établissements), et des délais très longs (créer/publier un IG prend des mois à des années).
-- Même Grahame Grieve (directeur produit FHIR) n'encourage pas particulièrement le passage à R5 ; les USA n'y passent pas non plus, sauf cas marginaux.
-- R5 reste intéressant ponctuellement : documentation améliorée, et certaines ressources ayant beaucoup gagné en maturité (ex. produits médicamenteux).
-- L'IG HL7 international **cross-version R5↔R4** (<https://hl7.org/fhir/uv/xver-r5.r4>) réduit encore l'intérêt de migrer : il permet de porter de nouveaux attributs/ressources R5 en R4 via des extensions standardisées.
+**Le signal à suivre pour une évolution future n'est pas une concertation R6 propre à l'ANS, mais la position de l'EHDS** (European Health Data Space, qui impose R4 pour ses actes d'exécution) — voir la checklist de rafraîchissement ci-dessus.
 
-Trajectoire retenue par l'ANS : rester en R4 par défaut (avec, si utile, des extensions R4 imitant des attributs R5 — voir l'IG cross-version ci-dessus) ; évaluer R5 au cas par cas quand la pertinence est claire (ressource très évoluée en R5, besoin d'échange international nécessitant R5, possibilité de s'affranchir de l'héritage R4) ; et, surtout, s'aligner sur la position de l'**EHDS** — c'est ce signal européen qui prime sur toute considération ANS isolée.
-
-**R6** : ce n'est plus un sujet de veille autonome pour ce skill. La position à suivre est celle de l'**EHDS** (European Health Data Space), qui impose R4 pour ses actes d'exécution — c'est cet alignement européen qui dicte la trajectoire française, pas une concertation R6 propre à l'ANS.
-
-Détail complet, sources et citations exactes : `references/versions-fhir.md`.
+Argumentaire complet, sources et citations exactes : `references/versions-fhir.md`.
 
 ## 2. Panorama des IGs FHIR français
 
@@ -83,7 +74,7 @@ Composition complète des comités, tableau de correspondance statut CI-SIS ↔ 
 
 Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
-Aucune zone d'incertitude connue à la date de MAJ en tête de ce fichier (toutes celles identifiées lors des revues précédentes ont été levées). Si tu en identifies une nouvelle en répondant à une question, ajoute-la ici plutôt que de la laisser non documentée.
+Aucune incertitude factuelle majeure n'est connue à la date de MAJ (les points précédemment ouverts — décision R4/R5, trajectoire du VSM, IG cancérologie, documents EHDS — ont été levés et sourcés). Il reste des TODO de vérification **routinière** (pas des doutes factuels) dans chaque fichier de référence — ex. statut FHIR natif vs CDA de `interop-ig-document-cr-bio` (`catalogue-igs.md`), numéro de version NOS exact (`terminologies.md`) : à recontrôler lors de la revue périodique, voir la checklist en tête de ce fichier. Si tu identifies une vraie incertitude factuelle en répondant à une question, ajoute-la ici plutôt que de la laisser non documentée.
 
 ## 6. Comment mettre à jour ce skill
 

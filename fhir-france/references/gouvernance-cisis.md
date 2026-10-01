@@ -54,6 +54,8 @@ Expression de besoin → filtrage par le Comité d'Instruction contre des critè
 | final-text | `active` | `final-text` | `final-text` | `milestone` |
 | withdrawn/deprecated | `retired` | N/A | `withdrawn` ou `retired` | `withdrawal` |
 
+**Source faisant autorité** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir>. Ce tableau est une copie de confort pour que ce skill reste autonome ; en cas de doute ou de divergence apparente (y compris avec une copie du même tableau dans une config locale type CLAUDE.md), c'est la page ANS ci-dessus qui fait foi, pas cette copie.
+
 Ce tableau est repris ici pour que le skill reste autonome pour tout utilisateur du dépôt partagé `interop-skills` (il recoupe celui déjà utilisé en interne pour les process de release — voir les skills `release`/`release-ig` si disponibles dans ton environnement).
 
 ## Sources
