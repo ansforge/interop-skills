@@ -16,6 +16,8 @@ Ce skill s'adresse aux **développeurs qui implémentent ou produisent des resso
 
 **Si aucun IG existant ne couvre le cas d'usage recherché** : ne pas inventer une solution ad hoc. Conseiller d'écrire une **expression de besoin** auprès de l'ANS, point d'entrée du processus de gouvernance CI-SIS (Comité d'Instruction → priorisation par le COPIL → publication d'un nouvel IG — voir `references/gouvernance-cisis.md`). C'est la voie officielle pour faire émerger une nouvelle spec plutôt que de contourner l'absence de standard.
 
+**Si un IG existe mais semble peu mûr (Draft, trial-use)** : l'utiliser quand même plutôt que de construire une solution propriétaire. Pour l'interopérabilité, un IG encore jeune reste préférable à l'absence de standard commun — la maturité influence la prudence à adopter (ressources susceptibles d'évoluer), pas la décision de l'utiliser ou non.
+
 ## Ce qui bouge vite (à revérifier en priorité)
 
 1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel), le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>, et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.

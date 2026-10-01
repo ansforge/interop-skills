@@ -35,7 +35,7 @@ Expression de besoin → filtrage par le Comité d'Instruction contre des critè
 
 - **Source** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html> (v0.1.11, final-text, generated 2026-06-18 ; repo `ansforge/interop-IG-documentation`).
 - **Contenu pertinent pour un développeur qui produit des ressources FHIR** (ce que cette page couvre et qui aide à produire des ressources conformes) :
-  1. Critères de qualité/maturité des IGs — utile pour juger si un IG est assez mûr pour produire des ressources en production.
+  1. Critères de qualité/maturité des IGs — utile pour savoir à quoi s'attendre d'un IG encore Draft/peu mûr (ressources susceptibles de changer, moins de retours d'implémentation). **La maturité n'est pas un critère pour écarter un IG** : même un IG immature reste préférable à une solution propriétaire pour l'interopérabilité — voir le principe "pas de solution ad hoc" dans `SKILL.md`.
   2. Conventions de nommage pour tous les types d'artefacts FHIR — utile pour reconnaître/retrouver profils, extensions, value sets dans un IG.
   3. Recommandation R4 par défaut (voir `versions-fhir.md`).
   4. Pointeur vers les conventions de nommage des terminologies (voir `terminologies.md`).
