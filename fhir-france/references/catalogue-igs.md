@@ -21,8 +21,8 @@ L'EHDS (European Health Data Space) impose la production de 6 catégories de doc
 | Prescription électronique | `interop-ig-fhir-ePrescription` | Draft |
 | Dispensation électronique | `interop-ig-fhir-edispensation` | — |
 | Compte-rendu de biologie médicale | `interop-ig-document-cr-bio` | À confirmer si nativement FHIR ou encore CDA |
-| Lettre de sortie d'hospitalisation | Repo non identifié avec certitude — probablement dans la famille "document-core" (voir ci-dessous), à vérifier | Non confirmé |
-| Compte-rendu d'imagerie médicale et images médicales | Repo non identifié avec certitude | Non confirmé |
+| Lettre de sortie d'hospitalisation | Pas encore créé à la date de MAJ de ce fichier | Reste à développer |
+| Compte-rendu d'imagerie médicale et images médicales | Pas encore créé à la date de MAJ de ce fichier | Reste à développer |
 
 ## FR Core
 
@@ -95,7 +95,7 @@ Org GitHub : `Interop-Sante`.
 
 ## TODO de vérification
 
-- [ ] Identifier le repo FHIR français pour la "lettre de sortie d'hospitalisation" et pour le "compte-rendu d'imagerie médicale et images médicales" (2 des 6 documents EHDS, voir table ci-dessus) — rechercher sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
+- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale et images médicales" (2 des 6 documents EHDS, pas encore créés à la date de MAJ — voir table ci-dessus).
 - [ ] Rechercher si un IG FHIR dédié à la cancérologie existe (hors périmètre EHDS, simple hypothèse non confirmée lors de la dernière revue).
 - [ ] Confirmer si `interop-ig-document-cr-bio` est nativement FHIR ou encore porté en CDA.
 - [ ] Revérifier tous les statuts/versions listés ci-dessus contre <https://interop.esante.gouv.fr/ig/fhir/>.

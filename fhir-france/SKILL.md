@@ -22,6 +22,7 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 - [ ] Vérifier le dernier tag de `Interop-Sante/hl7.fhir.fr.core`
 - [ ] Vérifier si l'EHDS a changé sa position sur la version FHIR à utiliser (R4 actuellement) — c'est le signal qui prime, pas une veille isolée sur une concertation R6 de l'ANS
 - [ ] Vérifier le numéro de version NOS
+- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale" (2 des 6 documents EHDS, pas encore créés à la date de MAJ)
 - [ ] Revisiter la section "Zones d'incertitude" plus bas et tenter de lever chaque point
 - [ ] Mettre à jour la date en tête de ce fichier une fois la vérification faite, même si rien n'a changé — cela indique à un futur lecteur que le contenu reste fiable
 
@@ -76,7 +77,6 @@ Composition complète des comités, tableau de correspondance statut CI-SIS ↔ 
 
 Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
-- **Repos français pour 2 des 6 documents EHDS** : la liste des 6 documents EHDS est désormais confirmée (voir ci-dessus et `references/catalogue-igs.md`), mais le repo FHIR français précis n'est pas identifié avec certitude pour la "lettre de sortie d'hospitalisation" et le "compte-rendu d'imagerie médicale" — à rechercher sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
 - **IG cancérologie** : simple hypothèse non confirmée lors de la dernière revue (hors périmètre EHDS) — à vérifier avant de citer un nom de repo précis.
 
 ## 6. Comment mettre à jour ce skill
