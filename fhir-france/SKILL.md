@@ -36,7 +36,7 @@ Pourquoi R4 et pas R5 :
 - R5 reste intéressant ponctuellement : documentation améliorée, et certaines ressources ayant beaucoup gagné en maturité (ex. produits médicamenteux).
 - L'IG HL7 international **cross-version R5↔R4** (<https://hl7.org/fhir/uv/xver-r5.r4>) réduit encore l'intérêt de migrer : il permet de porter de nouveaux attributs/ressources R5 en R4 via des extensions standardisées.
 
-Trajectoire retenue par l'ANS : rester en R4 par défaut (avec, si utile, des extensions R4 imitant des attributs R5 — voir l'IG cross-version ci-dessus) ; évaluer R5 au cas par cas quand la pertinence est claire (ressource très évoluée en R5, besoin d'échange international nécessitant R5, possibilité de s'affranchir de l'héritage R4).
+Trajectoire retenue par l'ANS : rester en R4 par défaut (avec, si utile, des extensions R4 imitant des attributs R5 — voir l'IG cross-version ci-dessus) ; évaluer R5 au cas par cas quand la pertinence est claire (ressource très évoluée en R5, besoin d'échange international nécessitant R5, possibilité de s'affranchir de l'héritage R4) ; et, surtout, s'aligner sur la position de l'**EHDS** — c'est ce signal européen qui prime sur toute considération ANS isolée.
 
 **R6** : ce n'est plus un sujet de veille autonome pour ce skill. La position à suivre est celle de l'**EHDS** (European Health Data Space), qui impose R4 pour ses actes d'exécution — c'est cet alignement européen qui dicte la trajectoire française, pas une concertation R6 propre à l'ANS.
 

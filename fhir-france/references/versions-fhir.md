@@ -32,8 +32,9 @@ FHIR core a été conçu comme foncièrement générique (très peu de champs ob
 **Trajectoire retenue** :
 1. Continuer à utiliser R4 par défaut ; utiliser, le cas échéant, des extensions R4 qui imitent les nouveaux attributs/ressources R5, pour faciliter une transition future.
 2. Étudier la pertinence de R5 au cas par cas : les ressources concernées ont-elles beaucoup gagné en maturité ? Y a-t-il un besoin d'échanges internationaux nécessitant R5 ? Peut-on se passer de l'héritage de l'écosystème R4 pour ce cas d'usage précis ?
+3. **Surtout, s'aligner sur la position de l'EHDS** — c'est le critère qui prime sur toute considération ANS isolée pour une éventuelle évolution vers R5/R6 (voir section EHDS plus bas).
 
-Ce n'est plus un sujet de veille autonome : la position à suivre est celle de l'**EHDS**, qui impose R4 pour ses actes d'exécution (voir plus bas) — c'est cet alignement européen qui dicte la trajectoire française, pas une concertation R6 propre à l'ANS.
+Ce n'est plus un sujet de veille autonome centré sur l'ANS : la position à suivre est celle de l'**EHDS**, qui impose R4 pour ses actes d'exécution (voir plus bas) — c'est cet alignement européen qui dicte la trajectoire française, pas une concertation R6 propre à l'ANS.
 
 **IG cross-version R5↔R4** (<https://hl7.org/fhir/uv/xver-r5.r4>) : ce guide d'implémentation HL7 international réduit encore l'intérêt de migrer vers R5 ou R6, puisqu'il permet de porter de nouveaux attributs/ressources R5 en R4 via des extensions standardisées — exactement le mécanisme envisagé au point 1 ci-dessus, mais désormais outillé par un IG dédié plutôt que par des extensions ad hoc.
 
