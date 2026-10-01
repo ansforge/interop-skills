@@ -16,6 +16,8 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 
 ## Checklist de rafraîchissement
 
+À exécuter lors d'une revue périodique de ce skill — pas à chaque question posée par un utilisateur, ce qui annulerait l'intérêt du skill (répondre vite sans recherche web systématique) :
+
 - [ ] Comparer <https://interop.esante.gouv.fr/ig/fhir/> à `references/catalogue-igs.md`
 - [ ] Vérifier le dernier tag de `Interop-Sante/hl7.fhir.fr.core`
 - [ ] Vérifier si une concertation/doctrine FHIR R6 a été publiée depuis (le choix R4 vs R5 est déjà tranché, voir ci-dessous)
@@ -68,6 +70,8 @@ La doctrine CI-SIS s'appuie sur la loi République Numérique (2016), les princi
 Composition complète des comités, tableau de correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json` : `references/gouvernance-cisis.md`. Si tu prépares une release d'IG, ce tableau recoupe celui déjà utilisé par les skills `release`/`release-ig`.
 
 ## 5. Zones d'incertitude connues (à vérifier, pas des faits établis)
+
+Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
 - **Concertation R6** : la décision R4 vs R5 est tranchée et sourcée (voir ci-dessus), mais une éventuelle concertation ou doctrine publiée depuis sur R6 reste à vérifier.
 - **IGs biologie / imagerie / cancérologie** : seule la biologie est confirmée nommément (`interop-ig-document-cr-bio`, compte-rendu biologie). Pas de repo identifié avec certitude sous un nom équivalent pour l'imagerie ou la cancérologie — à rechercher directement sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.

@@ -9,20 +9,24 @@
 ## Comitologie — 3 niveaux
 
 ### COPIL (Comité de Pilotage)
+
 - **Rôle** : décisionnel, fixe la stratégie et les priorités.
 - **Fréquence** : 3 réunions par an.
 - **Composition** : ANAP, ANS, ANSM, ATIH, CNAMTS, CNSA, DGOS, DGS, DSS, DNS, HAS, HDH, INCa.
 
 ### Comité de Concertation
+
 - **Rôle** : consultatif, recommande des priorités par valeur ajoutée.
 - **Fréquence** : 1 réunion par an (juin/juillet).
 - **Composition** : fédérations industrie (ASINHPA, FEIMA, Interop'Santé, LESSIS, SNITEM, SYNTEC) + représentants des utilisateurs (réseaux de santé, ordres professionnels, sociétés savantes).
 
 ### Comité d'Instruction
+
 - **Rôle** : opérationnel — préparation des dossiers, analyse des besoins, exécution des process, support au COPIL.
 - **Composition** : experts interopérabilité ANS + DNS.
 
 ### Processus
+
 Expression de besoin → filtrage par le Comité d'Instruction contre des critères stratégiques → décision de priorisation par le COPIL → publication des IGs.
 
 ## Page "bonnes pratiques"

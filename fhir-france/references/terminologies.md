@@ -5,12 +5,14 @@
 - **URL** : <https://smt.esante.gouv.fr/fhir>
 - **Rôle** : serveur de terminologie national officiel de l'ANS, exposant les terminologies de santé françaises en FHIR.
 - **Confirmation indépendante** : référencé dans le registre officiel de la HL7 FHIR Foundation (`ansforge/ig-registry`, fichier `hl7-fr-tx-servers.json`) :
-  ```
+
+  ```json
   code: "ans-fr-tx"
   name: "Agence du Numérique en Santé (ANS) Terminology Server"
   url: "https://smt.esante.gouv.fr/fhir"
   fhirVersions: [{"version": "R4", "url": "https://smt.esante.gouv.fr/fhir"}]
   ```
+
 - **Autoritatif pour** : les terminologies publiées sous `https://mos.esante.gouv.fr/*` et `https://smt.esante.gouv.fr/*`, ainsi que l'extension française de SNOMED CT (`http://snomed.info/sct/11000315107*`).
 
 ## IG Terminologies / NOS
