@@ -12,6 +12,8 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 
 Aider à trouver **la bonne spec au bon moment** : face à une question FHIR France, orienter rapidement vers le bon IG, la bonne terminologie ou la bonne doctrine plutôt que de laisser l'utilisateur chercher seul ou réinventer une solution déjà spécifiée. Plus ces specs sont effectivement utilisées, mieux l'écosystème français d'interopérabilité fonctionne — ce skill existe pour accroître leur adoption, pas seulement pour archiver de l'information.
 
+**Si aucun IG existant ne couvre le cas d'usage recherché** : ne pas inventer une solution ad hoc. Conseiller d'écrire une **expression de besoin** auprès de l'ANS, point d'entrée du processus de gouvernance CI-SIS (Comité d'Instruction → priorisation par le COPIL → publication d'un nouvel IG — voir `references/gouvernance-cisis.md`). C'est la voie officielle pour faire émerger une nouvelle spec plutôt que de contourner l'absence de standard.
+
 ## Ce qui bouge vite (à revérifier en priorité)
 
 1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel), le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>, et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.

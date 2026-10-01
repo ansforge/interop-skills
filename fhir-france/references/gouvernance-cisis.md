@@ -29,6 +29,8 @@
 
 Expression de besoin → filtrage par le Comité d'Instruction contre des critères stratégiques → décision de priorisation par le COPIL → publication des IGs.
 
+**Si aucun IG ne couvre un cas d'usage donné**, c'est ce processus qu'il faut déclencher : rédiger une expression de besoin auprès de l'ANS plutôt que de concevoir une solution ad hoc hors gouvernance. C'est le point d'entrée officiel pour faire émerger une nouvelle spec FHIR française.
+
 ## Page "bonnes pratiques"
 
 - **Source** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html> (v0.1.11, final-text, generated 2026-06-18 ; repo `ansforge/interop-IG-documentation`).
