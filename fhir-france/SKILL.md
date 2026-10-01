@@ -1,18 +1,22 @@
 ---
 name: fhir-france
-description: "Explique l'écosystème FHIR en France pour l'ANS et les porteurs de projets d'interopérabilité en santé — version FHIR à utiliser (R4 vs R5 vs R6), catalogue des IGs FHIR publiés (FR Core, guides référentiels et guides projet ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, statuts de publication). Utilise ce skill proactivement dès que l'utilisateur pose une question sur FHIR en France — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS — même si la question est formulée de façon générale ou si aucun IG n'est nommé explicitement. Le contenu date vite : vérifie toujours le bloc de date en tête du SKILL.md avant de répondre, et revérifie les sources si la date est ancienne."
+description: "Oriente les développeurs qui implémentent ou produisent des ressources FHIR en France (API, serveur FHIR, stockage, batch...) — quelle version FHIR utiliser (R4 vs R5 vs R6), catalogue des IGs publiés à implémenter (FR Core, guides ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, comment faire émerger une spec manquante). Ne couvre pas la rédaction/publication d'un IG (FSH/SUSHI, release) — réservé à un futur skill pour auteurs d'IG. Utilise ce skill proactivement dès qu'un développeur pose une question sur FHIR en France pour produire des ressources conformes — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS. Le contenu date vite : vérifie le bloc de date en tête du SKILL.md, et revérifie les sources si la date est ancienne."
 ---
 
-# FHIR en France
+# FHIR en France pour les développeurs qui produisent des ressources FHIR
 
 > **Dernière mise à jour du contenu : 2026-10-01**
 > Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Si cette date a plus de quelques mois, revérifie au moins les points ci-dessous avant de répondre avec certitude.
 
 ## Objectif de ce skill
 
-Aider à trouver **la bonne spec au bon moment** : face à une question FHIR France, orienter rapidement vers le bon IG, la bonne terminologie ou la bonne doctrine plutôt que de laisser l'utilisateur chercher seul ou réinventer une solution déjà spécifiée. Plus ces specs sont effectivement utilisées, mieux l'écosystème français d'interopérabilité fonctionne — ce skill existe pour accroître leur adoption, pas seulement pour archiver de l'information.
+Ce skill s'adresse aux **développeurs qui implémentent ou produisent des ressources FHIR** dans un système français (API, serveur FHIR, entrepôt/stockage, batch de génération de données...) — pas aux auteurs d'Implementation Guides. Il aide à trouver **la bonne spec au bon moment** : face à une question FHIR France, orienter rapidement vers le bon IG, la bonne terminologie ou la bonne doctrine plutôt que de laisser l'utilisateur chercher seul ou réinventer une solution déjà spécifiée. Plus ces specs sont effectivement utilisées, mieux l'écosystème français d'interopérabilité fonctionne — ce skill existe pour accroître leur adoption, pas seulement pour archiver de l'information.
+
+**Hors périmètre** : la rédaction d'un IG (FSH/SUSHI), son process de release (`sushi-config.yaml`, `publication-request.json`) et le workflow GitHub des repos d'IG ne sont pas couverts ici — ce sont des sujets pour un futur skill dédié aux auteurs/éditeurs d'IG.
 
 **Si aucun IG existant ne couvre le cas d'usage recherché** : ne pas inventer une solution ad hoc. Conseiller d'écrire une **expression de besoin** auprès de l'ANS, point d'entrée du processus de gouvernance CI-SIS (Comité d'Instruction → priorisation par le COPIL → publication d'un nouvel IG — voir `references/gouvernance-cisis.md`). C'est la voie officielle pour faire émerger une nouvelle spec plutôt que de contourner l'absence de standard.
+
+**Si un IG existe mais semble peu mûr (Draft, trial-use)** : l'utiliser quand même plutôt que de construire une solution propriétaire. Pour l'interopérabilité, un IG encore jeune reste préférable à l'absence de standard commun — la maturité influence la prudence à adopter (ressources susceptibles d'évoluer), pas la décision de l'utiliser ou non.
 
 ## Ce qui bouge vite (à revérifier en priorité)
 
@@ -68,7 +72,7 @@ Le **Cadre d'Interopérabilité des Systèmes d'Information de Santé (CI-SIS)**
 
 La doctrine CI-SIS s'appuie sur la loi République Numérique (2016), les principes FAIR et le 5-star Open Data, et privilégie FHIR (IGs stables ou profils IHE adaptés) comme standard de référence.
 
-Composition complète des comités, tableau de correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json` : `references/gouvernance-cisis.md`. Si tu prépares une release d'IG, ce tableau recoupe celui déjà utilisé par les skills `release`/`release-ig`.
+Composition complète des comités et processus de priorisation : `references/gouvernance-cisis.md`. Comprendre cette gouvernance aide à situer pourquoi une spec a tel statut et où adresser une expression de besoin si rien n'existe pour ton cas d'usage — ce fichier mentionne aussi, pour mémoire, un tableau de correspondance statut CI-SIS ↔ configuration d'IG qui concerne la publication d'un IG, pas la production de ressources conformes.
 
 ## 5. Zones d'incertitude connues (à vérifier, pas des faits établis)
 
