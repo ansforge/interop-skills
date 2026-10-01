@@ -48,6 +48,8 @@ Deux organisations principales publient des IGs FHIR pour la France :
 - **Interop'Santé** (association HL7 France, `github.com/Interop-Sante`) maintient notamment **FR Core** (`hl7.fhir.fr.core`), le socle de profils de base (Patient, Practitioner, Organization, Encounter, Observation...), les identifiants français (INS, RPPS, ADELI, FINESS) et les terminologies de référence (CIM-10, CCAM, NABM). Version publiée actuelle : 2.2.0, final-text, active depuis 2026-03-25.
 - **ANS** (`github.com/ansforge`) publie et maintient un catalogue organisé en **guides référentiels** (volets transversaux, réutilisables par plusieurs métiers — ex. Partage de Documents de Santé en mobilité/PDSm, Mesures de santé, Cercle de Soins, Cahier de Liaison) et **guides projet** (spécifiques à un périmètre métier — ex. Annuaire Santé, ROR, ECLAIRE, SAS, MSSanté).
 
+Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 documents de santé en FHIR — dont le VSM/Patient Summary (`interop-ig-fhir-document-patient-summary`, successeur FHIR direct du VSM aujourd'hui en CDA R2).
+
 Table complète (IGs, statuts, versions, mainteneurs, URLs) : `references/catalogue-igs.md`.
 
 ## 3. Terminologies françaises
@@ -75,7 +77,7 @@ Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à ch
 
 - **Concertation R6** : la décision R4 vs R5 est tranchée et sourcée (voir ci-dessus), mais une éventuelle concertation ou doctrine publiée depuis sur R6 reste à vérifier.
 - **IGs biologie / imagerie / cancérologie** : seule la biologie est confirmée nommément (`interop-ig-document-cr-bio`, compte-rendu biologie). Pas de repo identifié avec certitude sous un nom équivalent pour l'imagerie ou la cancérologie — à rechercher directement sur `github.com/ansforge` avant d'affirmer qu'ils n'existent pas.
-- **Statut FHIR du Volet de Synthèse Médicale (VSM)** : à la dernière vérification, le VSM semblait encore porté en CDA R2, avec un alignement en cours vers IPS (International Patient Summary, norme ISO). Le repo `ansforge/interop-ig-fhir-document-patient-summary` pourrait être la trajectoire FHIR de ce volet (ou un IG distinct de type IPS pur, sans lien direct avec le VSM CDA existant) — ouvrir ce repo (changelog, sushi-config, page d'introduction) pour trancher avant d'écrire une phrase définitive sur le sujet. Noter que `interop-ig-document-patient-summary` (sans "fhir" dans le nom) est un ancien nom de repo, remplacé par `interop-ig-fhir-document-patient-summary` — ce n'est pas un doublon actif, seulement un renommage/une migration à ne plus citer comme repo courant.
+- **Les 5 autres documents EHDS-FHIR** : l'EHDS (European Health Data Space) impose la production de 6 documents de santé en FHIR, dont le VSM/Patient Summary (confirmé, voir `references/catalogue-igs.md`) — mais les 5 autres documents ne sont pas identifiés avec certitude ici. Ne pas deviner leur nom ; les rechercher avant de répondre si la question porte dessus.
 
 ## 6. Comment mettre à jour ce skill
 

@@ -48,6 +48,8 @@ FHIR core a été conçu comme foncièrement générique (très peu de champs ob
 
 Le règlement européen EHDS (European Health Data Space) base actuellement ses actes d'exécution sur FHIR R4 également — ce choix pourrait évoluer, à surveiller en parallèle du choix français.
 
+Au-delà de la version FHIR, l'EHDS impose aussi la production de **6 documents de santé en FHIR**, dont le VSM/Patient Summary (porté en France par `interop-ig-fhir-document-patient-summary`, statut WIP — voir `catalogue-igs.md`). Cette obligation de calendrier explique pourquoi plusieurs IGs français sont actuellement en statut Draft/WIP. Les 5 autres documents imposés par l'EHDS ne sont pas identifiés avec certitude ici — à rechercher avant d'affirmer lesquels ils sont.
+
 ## Autres sources ANS confirmant R4 comme norme
 
 - Page "bonnes pratiques" ANS : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html> — recommande de "privilégier l'usage de R4" pour tout nouvel IG, toute autre version nécessitant une justification explicite.

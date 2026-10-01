@@ -65,7 +65,7 @@ Spécifiques à un périmètre métier donné.
 | Veille sanitaire | `IG-fhir-veille-sanitaire` | Surveillance sanitaire |
 | Document Core (famille) | `interop-IG-metier-document-core`, `interop-IG-fhir-document-core`, `interop-IG-cda-document-core` | Modélisation générique de document (métier/FHIR/CDA), socle pour les comptes-rendus |
 | Compte-rendu biologie | `interop-ig-document-cr-bio` | Compte-rendu de biologie — seul CR nommément confirmé à ce jour (imagerie/cancérologie : voir zones d'incertitude dans SKILL.md) |
-| Patient Summary (FHIR) | `interop-ig-fhir-document-patient-summary` | Repo actif. ⚠️ **Ne pas confondre** avec `interop-ig-document-patient-summary` (ancien nom de repo, remplacé — ne plus citer comme repo courant). Reste à confirmer si cet IG porte la trajectoire FHIR du Volet de Synthèse Médicale (VSM, aujourd'hui en CDA R2) ou s'il s'agit d'un IG distinct de type International Patient Summary (IPS) — voir section "Zones d'incertitude" du SKILL.md |
+| Patient Summary / VSM (FHIR) | `interop-ig-fhir-document-patient-summary` | Statut WIP. C'est la trajectoire FHIR du **Volet de Synthèse Médicale** (VSM, aujourd'hui encore en CDA R2), portée par l'obligation EHDS de produire ce document en FHIR. ⚠️ **Ne pas confondre** avec `interop-ig-document-patient-summary` (ancien nom de repo, remplacé — ne plus citer comme repo courant) |
 
 ## Repos Interop'Santé
 
@@ -82,5 +82,5 @@ Org GitHub : `Interop-Sante`.
 ## TODO de vérification
 
 - [ ] Rechercher sur `github.com/ansforge` des IGs imagerie/cancérologie sous des noms non évidents (168 repos au total, recherche par mot-clé uniquement effectuée à ce jour).
-- [ ] Clarifier le statut exact de `interop-ig-fhir-document-patient-summary` vis-à-vis du VSM.
+- [ ] Identifier les 5 autres documents que l'EHDS impose en FHIR, au-delà du VSM/Patient Summary (voir `versions-fhir.md`) — ne pas deviner, rechercher avant d'affirmer.
 - [ ] Revérifier tous les statuts/versions listés ci-dessus contre <https://interop.esante.gouv.fr/ig/fhir/>.
