@@ -10,7 +10,7 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 
 ## Ce qui bouge vite (à revérifier en priorité)
 
-1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel) et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.
+1. **Statuts et versions des IGs** — <https://interop.esante.gouv.fr/ig/fhir/> (catalogue officiel), le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>, et le dernier tag de `Interop-Sante/hl7.fhir.fr.core`.
 2. **Décision R4 vs R5/R6** — la concertation ANS "FHIR R5 ou R4" (25/10/2023 → 25/01/2024) a été consultée intégralement ; le choix R4 est confirmé et sourcé (voir `references/versions-fhir.md`). La stratégie de suivi n'est plus de traquer une éventuelle concertation R6 ANS isolément : la France aligne sa position sur celle de l'**EHDS**, qui impose R4 — c'est donc le signal EHDS qu'il faut surveiller, pas un calendrier R6 propre à l'ANS.
 3. **Version des terminologies NOS** — <https://interop.esante.gouv.fr/terminologies>
 
@@ -18,7 +18,7 @@ description: Explique l'écosystème FHIR en France pour l'ANS et les porteurs d
 
 À exécuter lors d'une revue périodique de ce skill — pas à chaque question posée par un utilisateur, ce qui annulerait l'intérêt du skill (répondre vite sans recherche web systématique) :
 
-- [ ] Comparer <https://interop.esante.gouv.fr/ig/fhir/> à `references/catalogue-igs.md`
+- [ ] Comparer <https://interop.esante.gouv.fr/ig/fhir/> (ou le flux machine-lisible <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml>) à `references/catalogue-igs.md`
 - [ ] Vérifier le dernier tag de `Interop-Sante/hl7.fhir.fr.core`
 - [ ] Vérifier si l'EHDS a changé sa position sur la version FHIR à utiliser (R4 actuellement) — c'est le signal qui prime, pas une veille isolée sur une concertation R6 de l'ANS
 - [ ] Vérifier le numéro de version NOS

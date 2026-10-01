@@ -1,6 +1,6 @@
 # Catalogue des IGs FHIR français
 
-> Catalogue non-exhaustif, construit par recherche sur GitHub (`ansforge`, `Interop-Sante`) et sur le catalogue officiel. **Le site <https://interop.esante.gouv.fr/ig/fhir/> fait foi** — vérifier en priorité là-bas avant de citer un statut ou une version comme certain.
+> Catalogue non-exhaustif, construit par recherche sur GitHub (`ansforge`, `Interop-Sante`) et sur le catalogue officiel. **Le site <https://interop.esante.gouv.fr/ig/fhir/> fait foi** — vérifier en priorité là-bas avant de citer un statut ou une version comme certain. Pour une liste machine-lisible et à jour des packages FHIR publiés (nom, version, URL canonique), consulter le flux <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml> — pratique pour vérifier rapidement si un IG ou une version a été ajouté depuis la dernière revue.
 
 ## Sommaire
 
