@@ -77,6 +77,7 @@ Spécifiques à un périmètre métier donné.
 | Médico-social — suivi décisions d'orientation (SDO) | `IG-fhir-medicosocial-suivi-decisions-orientation` | Suivi des décisions MDPH vers les DUI |
 | Traçabilité DMI | `interop-ig-fhir-tracabilite-dmi` | Traçabilité des Dispositifs Médicaux Implantables |
 | Veille sanitaire | `IG-fhir-veille-sanitaire` | Surveillance sanitaire |
+| OSIRIS (cancérologie) | <https://ig-osiris.cancer.fr/ig/osiris/> | Standardisation des données d'oncologie (démographie, événements de pathologie tumorale, traitements, séquençage, radiothérapie/radiomique) pour la médecine de précision en cancérologie. Maintenu par l'INCa (Institut National du Cancer), développé avec Institut Curie, Institut Bergonié, Centre Léon Bérard et Arkhn. Version 1.1.0, trial-implementation, base FHIR R4 |
 | Document Core (famille) | `interop-IG-metier-document-core`, `interop-IG-fhir-document-core`, `interop-IG-cda-document-core` | Modélisation générique de document (métier/FHIR/CDA), socle pour les comptes-rendus |
 | Compte-rendu biologie | `interop-ig-document-cr-bio` | Compte-rendu de biologie — document EHDS, voir table "Documents prioritaires EHDS" ci-dessus |
 | Patient Summary / VSM (FHIR) | `interop-ig-fhir-document-patient-summary` | Statut WIP. C'est la trajectoire FHIR du **Volet de Synthèse Médicale** (VSM, aujourd'hui encore en CDA R2), portée par l'obligation EHDS de produire ce document en FHIR. ⚠️ **Ne pas confondre** avec `interop-ig-document-patient-summary` (ancien nom de repo, remplacé — ne plus citer comme repo courant) |
@@ -95,7 +96,6 @@ Org GitHub : `Interop-Sante`.
 
 ## TODO de vérification
 
-- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale et images médicales" (2 des 6 documents EHDS, pas encore créés à la date de MAJ — voir table ci-dessus).
-- [ ] Rechercher si un IG FHIR dédié à la cancérologie existe (hors périmètre EHDS, simple hypothèse non confirmée lors de la dernière revue).
+- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale et images médicales" (2 des 6 documents EHDS, pas encore créés à la date de MAJ — voir table ci-dessus). Vérifier précisément pour le cas d'usage visé (ex. le cas d'usage EHDS) — un IG français portant un nom similaire peut déjà exister sans couvrir ce périmètre précis (échange transfrontalier européen), et inversement.
 - [ ] Confirmer si `interop-ig-document-cr-bio` est nativement FHIR ou encore porté en CDA.
 - [ ] Revérifier tous les statuts/versions listés ci-dessus contre <https://interop.esante.gouv.fr/ig/fhir/>.

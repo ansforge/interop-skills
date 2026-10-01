@@ -26,7 +26,7 @@ Aider à trouver **la bonne spec au bon moment** : face à une question FHIR Fra
 - [ ] Vérifier le dernier tag de `Interop-Sante/hl7.fhir.fr.core`
 - [ ] Vérifier si l'EHDS a changé sa position sur la version FHIR à utiliser (R4 actuellement) — c'est le signal qui prime, pas une veille isolée sur une concertation R6 de l'ANS
 - [ ] Vérifier le numéro de version NOS
-- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale" (2 des 6 documents EHDS, pas encore créés à la date de MAJ)
+- [ ] Vérifier si un IG FHIR français a depuis été créé pour la "lettre de sortie d'hospitalisation" ou le "compte-rendu d'imagerie médicale" (2 des 6 documents EHDS, pas encore créés à la date de MAJ) — en vérifiant précisément pour le cas d'usage visé (ex. le cas d'usage EHDS), un IG au nom similaire pouvant déjà exister sans couvrir ce périmètre
 - [ ] Revisiter la section "Zones d'incertitude" plus bas et tenter de lever chaque point
 - [ ] Mettre à jour la date en tête de ce fichier une fois la vérification faite, même si rien n'a changé — cela indique à un futur lecteur que le contenu reste fiable
 
@@ -81,7 +81,7 @@ Composition complète des comités, tableau de correspondance statut CI-SIS ↔ 
 
 Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
-- **IG cancérologie** : simple hypothèse non confirmée lors de la dernière revue (hors périmètre EHDS) — à vérifier avant de citer un nom de repo précis.
+Aucune zone d'incertitude connue à la date de MAJ en tête de ce fichier (toutes celles identifiées lors des revues précédentes ont été levées). Si tu en identifies une nouvelle en répondant à une question, ajoute-la ici plutôt que de la laisser non documentée.
 
 ## 6. Comment mettre à jour ce skill
 
