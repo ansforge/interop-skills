@@ -70,16 +70,25 @@ La doctrine CI-SIS s'appuie sur la loi République Numérique (2016), les princi
 
 Composition complète des comités, tableau de correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json` : `references/gouvernance-cisis.md`. Si tu prépares une release d'IG, ce tableau recoupe celui déjà utilisé par les skills `release`/`release-ig`.
 
-## 5. Zones d'incertitude connues (à vérifier, pas des faits établis)
+## 5. Valider la conformité d'une ressource à un profil
+
+Avant de considérer une ressource FHIR (exemple, instance de test, donnée produite par une implémentation) comme conforme à un profil d'un IG français, valide-la avec un **FHIR validator** plutôt que de te fier à une relecture visuelle — une ressource qui « a l'air bonne » peut violer une cardinalité, un binding ou un invariant du profil sans que ce soit visible à l'œil :
+
+- **MCP `matchbox`** (si disponible dans l'environnement) — `mcp__matchbox__validate-fhir-resource`, en identifiant au préalable le(s) profil(s) visé(s) via `list-fhir-profiles-to-validate-for` ou `get-profiles-for-document-bundle`. Rapide, aucune installation requise.
+- **`validator_cli.jar`** (HL7, officiel) — pour reproduire ce que fait l'IG Publisher en CI, ou quand `matchbox` n'est pas disponible :
+  `java -jar validator_cli.jar <resource.json> -ig <package>#<version> -profile <url-du-profil>`
+  Doc : <https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator>
+
+## 6. Zones d'incertitude connues (à vérifier, pas des faits établis)
 
 Cette liste s'adresse à qui met à jour ce skill (revue périodique), pas à chaque utilisation ponctuelle : pour répondre à une question FHIR, tu peux t'appuyer sur le contenu de ce skill tel quel, mais signale ces points précis comme non confirmés si la question les touche directement.
 
 Aucune incertitude factuelle majeure n'est connue à la date de MAJ (les points précédemment ouverts — décision R4/R5, trajectoire du VSM, IG cancérologie, documents EHDS — ont été levés et sourcés). Il reste des TODO de vérification **routinière** (pas des doutes factuels) dans chaque fichier de référence — ex. statut FHIR natif vs CDA de `interop-ig-document-cr-bio` (`catalogue-igs.md`), numéro de version NOS exact (`terminologies.md`) : à recontrôler lors de la revue périodique, voir la checklist en tête de ce fichier. Si tu identifies une vraie incertitude factuelle en répondant à une question, ajoute-la ici plutôt que de la laisser non documentée.
 
-## 6. Comment mettre à jour ce skill
+## 7. Comment mettre à jour ce skill
 
 Suis la checklist de rafraîchissement en tête de ce fichier. Même si aucune information n'a changé, mets à jour la date en tête : cela indique à un futur lecteur (humain ou agent) que le contenu a été vérifié récemment et reste fiable tel quel.
 
-## 7. Retours sur les specs
+## 8. Retours sur les specs
 
 Si une spec citée ici pose problème (ambiguïté, question d'implémentation, suggestion d'amélioration), les retours sont très appréciés via les **issues GitHub du repo concerné** (ex. `github.com/ansforge/<repo>/issues` ou `github.com/Interop-Sante/<repo>/issues`) — encourage l'utilisateur à les utiliser plutôt que de contourner la spec en silence : c'est ce qui fait progresser l'écosystème.
