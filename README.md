@@ -1,10 +1,10 @@
 # interop-skills
 
-Skills [Claude Code](https://claude.com/claude-code) pour l'interopérabilité en santé en France, maintenus par l'ANS (Agence du Numérique en Santé).
+Skills d'interopérabilité en santé en France, packagés comme plugin [Claude Code](https://claude.com/claude-code) et utilisables par tout assistant IA compatible (Claude, Mistral, ...), maintenus par l'ANS (Agence du Numérique en Santé).
 
 ## À quoi ça sert ?
 
-Si vous développez une API ou un système de santé en France, ces skills aident votre agent Claude Code à trouver **la bonne spec au bon moment** : version FHIR à utiliser, IG existant pour votre cas d'usage, terminologies françaises, gouvernance CI-SIS — plutôt que de réinventer une solution déjà spécifiée ou de partir sur une base obsolète.
+Si vous développez une API ou un système de santé en France, ces skills aident votre assistant IA (Claude, Mistral, ou autre) à trouver **la bonne spec au bon moment** : version FHIR à utiliser, IG existant pour votre cas d'usage, terminologies françaises, gouvernance CI-SIS — plutôt que de réinventer une solution déjà spécifiée ou de partir sur une base obsolète.
 
 ## Skills disponibles
 

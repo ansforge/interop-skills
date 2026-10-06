@@ -21,8 +21,7 @@
 - **Rôle** : publie des versions figées des **NOS (Nomenclatures des Objets de Santé)** — une sorte de "snapshot" stable de ce qui existe sur le SMT, utile quand on a besoin d'une référence versionnée plutôt que de l'état courant du serveur.
 - **Formats disponibles** : PDF, CSV, XML, SVS, XML/FHIR, JSON/FHIR.
 - **Version observée à la date de MAJ de ce fichier (2026-10-01)** : v1.7.0 (à revérifier — ce numéro évolue régulièrement).
-- **IG associé** : `IG-NOS` / `ans.fhir.fr.nos` (versions observées jusqu'à 1.5.0), documente les value sets NOS en forme FHIR-native, avec notes de migration "NOS vers SMT".
-- **Outillage complémentaire** : `ansforge/interop-conversion-smt-csv-fhir` (conversion CSV ↔ FHIR), `ansforge/interop-outil-fhir-terminology-server` (serveur de terminologie de sandbox préconfiguré avec les terminologies françaises, fork de FHIRSmith).
+- **IG associé** : `ansforge/IG-terminologie-de-sante` / package `ans.fr.terminologies` (version 1.14.0, `final-text`, active), documente les value sets NOS en forme FHIR-native. Remplace l'ancien `ansforge/IG-NOS` / `ans.fhir.fr.nos` (archivé, dernière version observée 1.5.0) — ne plus le citer comme IG courant.
 
 ## Convention de nommage des artefacts terminologiques
 
