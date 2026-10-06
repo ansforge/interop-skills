@@ -48,10 +48,10 @@ Argumentaire complet, sources et citations exactes : `references/versions-fhir.m
 
 Deux organisations principales publient des IGs FHIR pour la France :
 
-- **Interop'Santé** (association HL7 France, `github.com/Interop-Sante`) maintient notamment **FR Core** (`hl7.fhir.fr.core`), le socle de profils de base (Patient, Practitioner, Organization, Encounter, Observation...), les identifiants français (INS, RPPS, ADELI, FINESS) et les terminologies de référence (CIM-10, CCAM, NABM). Version publiée actuelle : 2.2.0, final-text, active depuis 2026-03-25.
+- **Interop'Santé** (association HL7 France, `github.com/Interop-Sante`) maintient notamment **FR Core** (`hl7.fhir.fr.core`), le socle de profils de base (Patient, Practitioner, Organization, Encounter, Observation...), les identifiants français (INS, RPPS, ADELI, FINESS) et les terminologies de référence (CIM-10, CCAM, NABM, SNOMED, ...). Version publiée actuelle : 2.2.0, final-text, active depuis 2026-03-25.
 - **ANS** (`github.com/ansforge`) publie et maintient un catalogue organisé en **guides référentiels** (volets transversaux, réutilisables par plusieurs métiers — ex. Partage de Documents de Santé en mobilité/PDSm, Mesures de santé, Cercle de Soins, Cahier de Liaison) et **guides projet** (spécifiques à un périmètre métier — ex. Annuaire Santé, ROR, ECLAIRE, SAS, MSSanté).
 
-Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 catégories de documents de santé en FHIR : Patient Summary (VSM), prescription électronique, dispensation électronique, compte-rendu de biologie, lettre de sortie d'hospitalisation, compte-rendu d'imagerie médicale et images médicales. Mappage détaillé avec les IGs français : `references/catalogue-igs.md`.
+Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 catégories de documents de santé en FHIR : Patient Summary (VSM), prescription électronique, dispensation électronique, compte-rendu de biologie, lettre de sortie d'hospitalisation, compte-rendu d'imagerie médicale et images médicales. Informations détaillées des IG français : `references/catalogue-igs.md`.
 
 Table complète (IGs, statuts, versions, mainteneurs, URLs) : `references/catalogue-igs.md`.
 

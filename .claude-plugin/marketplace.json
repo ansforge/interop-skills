@@ -4,7 +4,7 @@
     "name": "ANS - Agence du Numérique en Santé",
     "url": "https://esante.gouv.fr"
   },
-  "description": "Skills Claude Code pour l'interopérabilité en santé en France (ANS)",
+  "description": "Skills d'interopérabilité en santé en France pour assistants IA (Claude, Mistral, ...), maintenus par l'ANS",
   "plugins": [
     {
       "name": "fhir-france",
