@@ -34,29 +34,20 @@ Expression de besoin → filtrage par le Comité d'Instruction contre des critè
 ## Page "bonnes pratiques"
 
 - **Source** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html> (v0.1.11, final-text, generated 2026-06-18 ; repo `ansforge/interop-IG-documentation`).
-- **Contenu** :
-  1. Critères de qualité/maturité des IGs.
-  2. Comment rédiger les ressources de conformance (profils, extensions, ressources de terminologie).
-  3. Conventions de nommage pour tous les types d'artefacts FHIR.
-  4. Processus de release d'IG FHIR, mappé aux statuts CI-SIS (voir tableau ci-dessous), avec référence à la doc HL7 Confluence (`confluence.hl7.org/pages/viewpage.action?pageId=35718826`).
-  5. Conventions de gestion des alias FSH/SUSHI.
-  6. Règles de workflow GitHub pour les repos d'IG.
-  7. Recommandation R4 par défaut (voir `versions-fhir.md`).
-  8. Pointeur vers les conventions de nommage des terminologies (voir `terminologies.md`).
+- **Contenu pertinent pour un développeur qui produit des ressources FHIR** (ce que cette page couvre et qui aide à produire des ressources conformes) :
+  1. Critères de qualité/maturité des IGs — utile pour savoir à quoi s'attendre d'un IG encore Draft/peu mûr (ressources susceptibles de changer, moins de retours d'implémentation). **La maturité n'est pas un critère pour écarter un IG** : même un IG immature reste préférable à une solution propriétaire pour l'interopérabilité — voir le principe "pas de solution ad hoc" dans `SKILL.md`.
+  2. Conventions de nommage pour tous les types d'artefacts FHIR — utile pour reconnaître/retrouver profils, extensions, value sets dans un IG.
+  3. Recommandation R4 par défaut (voir `versions-fhir.md`).
+  4. Pointeur vers les conventions de nommage des terminologies (voir `terminologies.md`).
+- **Contenu réservé aux auteurs/éditeurs d'IG** (hors périmètre de ce skill, prévu pour un futur skill `ig-builder`) : comment rédiger les ressources de conformance (profils, extensions, ressources de terminologie), le processus de release d'IG FHIR mappé aux statuts CI-SIS, les conventions de gestion des alias FSH/SUSHI, les règles de workflow GitHub des repos d'IG.
 
-## Tableau de correspondance statut CI-SIS ↔ configuration d'IG
+## Correspondance statut CI-SIS ↔ configuration d'IG (hors périmètre de ce skill)
 
-| Statut CI-SIS | `sushi-config.yaml` > `status` | `sushi-config.yaml` > `releaseLabel` | `publication-request.json` > `status` | `publication-request.json` > `mode` |
-|---|---|---|---|---|
-| draft | `draft` | `ci-build` | `ci-build` | N/A |
-| public-comment | `draft` | `ballot` | `ballot` | `working` |
-| for implementation | `active` | `trial-use` | `trial-use` | `milestone` |
-| final-text | `active` | `final-text` | `final-text` | `milestone` |
-| withdrawn/deprecated | `retired` | N/A | `withdrawn` ou `retired` | `withdrawal` |
+L'ANS publie un tableau de correspondance entre les statuts CI-SIS (draft, public-comment, for implementation, final-text, withdrawn/deprecated) et les champs `sushi-config.yaml`/`publication-request.json` d'un projet FSH/SUSHI (`status`, `releaseLabel`, `mode`...). Ce tableau concerne qui **publie** un IG (choix de configuration au moment de la release), pas qui **produit des ressources** conformes à cet IG dans une implémentation — il n'est donc pas reproduit ici.
 
-**Source faisant autorité** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir>. Ce tableau est une copie de confort pour que ce skill reste autonome ; en cas de doute ou de divergence apparente (y compris avec une copie du même tableau dans une config locale type CLAUDE.md), c'est la page ANS ci-dessus qui fait foi, pas cette copie.
+**Source faisant autorité** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir>.
 
-Ce tableau est repris ici pour que le skill reste autonome pour tout utilisateur du dépôt partagé `interop-skills` (il recoupe celui déjà utilisé en interne pour les process de release — voir les skills `release`/`release-ig` si disponibles dans ton environnement).
+Ce tableau, ainsi que le reste des bonnes pratiques de rédaction/publication d'IG, a vocation à vivre dans un futur skill `ig-builder` destiné aux auteurs/éditeurs d'IG.
 
 ## Sources
 

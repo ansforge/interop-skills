@@ -9,9 +9,9 @@
     {
       "name": "fhir-france",
       "source": "./fhir-france",
-      "description": "Panorama FHIR France : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
+      "description": "Panorama FHIR France pour développeurs qui produisent des ressources FHIR : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
       "category": "reference",
-      "tags": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis"]
+      "tags": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis", "api"]
     }
   ]
 }

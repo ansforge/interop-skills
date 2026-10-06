@@ -1,13 +1,13 @@
 {
   "name": "fhir-france",
   "displayName": "FHIR France",
-  "version": "1.0.0",
-  "description": "Panorama FHIR France : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
+  "version": "1.1.0",
+  "description": "Panorama FHIR France pour développeurs qui produisent des ressources FHIR : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
   "author": {
     "name": "ANS - Agence du Numérique en Santé",
     "url": "https://esante.gouv.fr"
   },
   "homepage": "https://github.com/ansforge/interop-skills",
   "repository": "https://github.com/ansforge/interop-skills",
-  "keywords": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis", "ehds"]
+  "keywords": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis", "ehds", "api"]
 }
