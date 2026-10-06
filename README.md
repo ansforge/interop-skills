@@ -4,11 +4,15 @@ Skills d'interopérabilité en santé en France, packagés comme plugin [Claude 
 
 ## À quoi ça sert ?
 
-Si vous développez une API ou un système de santé en France, ces skills aident votre assistant IA (Claude, Mistral, ou autre) à trouver **la bonne spec au bon moment** : version FHIR à utiliser, IG existant pour votre cas d'usage, terminologies françaises, gouvernance CI-SIS — plutôt que de réinventer une solution déjà spécifiée ou de partir sur une base obsolète.
+Si vous implémentez ou produisez des ressources FHIR en France (API, serveur FHIR, stockage, batch...), ces skills aident votre assistant IA (Claude, Mistral, ou autre) à trouver **la bonne spec au bon moment** : version FHIR à utiliser, IG existant pour votre cas d'usage, terminologies françaises, gouvernance CI-SIS — plutôt que de réinventer une solution déjà spécifiée ou de partir sur une base obsolète.
 
 ## Skills disponibles
 
-- **[fhir-france](fhir-france/SKILL.md)** — Panorama de l'écosystème FHIR français : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS.
+- **[fhir-france](fhir-france/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir la roadmap ci-dessous.
+
+## À venir
+
+- **ig-builder** — skill destiné aux auteurs/éditeurs d'IG FHIR français : rédaction FSH/SUSHI, process de release (`sushi-config.yaml`/`publication-request.json`), conventions d'alias, workflow GitHub des repos d'IG. S'appuiera notamment sur la documentation bonnes pratiques déjà rédigée sur <https://interop.esante.gouv.fr/ig/documentation/>.
 
 ## Installation
 
