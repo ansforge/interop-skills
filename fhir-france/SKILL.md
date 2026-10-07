@@ -8,6 +8,8 @@ description: "Oriente les développeurs qui implémentent ou produisent des ress
 > **Dernière mise à jour du contenu : 2026-10-01**
 > Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Vérifie systématiquement s'il existe des versions plus récentes des points ci-dessous avant de répondre avec certitude.
 
+**Doublon anglais synchronisé** : `fhir-france-en/SKILL.md` en est la traduction. Toute mise à jour de contenu ici doit être répercutée là-bas (et inversement).
+
 ## Objectif de ce skill
 
 Ce skill s'adresse aux **développeurs qui implémentent ou produisent des ressources FHIR** dans un système français (API, serveur FHIR, entrepôt/stockage, batch de génération de données...) — pas aux auteurs d'Implementation Guides. Il aide à trouver **la bonne spec au bon moment** : face à une question FHIR France, orienter rapidement vers le bon IG, la bonne terminologie ou la bonne doctrine plutôt que de laisser l'utilisateur chercher seul ou réinventer une solution déjà spécifiée. Plus ces specs sont effectivement utilisées, mieux l'écosystème français d'interopérabilité fonctionne — ce skill existe pour accroître leur adoption, pas seulement pour archiver de l'information.

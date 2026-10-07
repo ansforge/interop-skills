@@ -1,5 +1,7 @@
 # interop-skills
 
+*English version: [README.en.md](README.en.md)*
+
 Skills d'interopérabilité en santé en France, packagés comme plugin [Claude Code](https://claude.com/claude-code) et utilisables par tout assistant IA compatible (Claude, Mistral, ...), maintenus par l'ANS (Agence du Numérique en Santé).
 
 ## À quoi ça sert ?
@@ -9,6 +11,7 @@ Si vous implémentez ou produisez des ressources FHIR en France (API, serveur FH
 ## Skills disponibles
 
 - **[fhir-france](fhir-france/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir la roadmap ci-dessous.
+- **[fhir-france-en](fhir-france-en/SKILL.md)** — Doublon anglais synchronisé de `fhir-france`, même contenu, mêmes sources.
 
 ## À venir
 
