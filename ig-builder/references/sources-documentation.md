@@ -19,11 +19,17 @@
 - <https://github.com/HL7/fhir-ig-publisher> — IG Publisher, outil de génération des sites d'IG.
 - <https://github.com/FHIR/sushi> — SUSHI, le compilateur FSH → FHIR.
 
+## Repo d'exemple et templates HL7 International
+
+- <https://github.com/FHIR/sample-ig/> — repo d'exemple officiel HL7, point de départ recommandé pour tout nouvel IG (voir `demarrage-ig.md`).
+- <https://github.com/HL7/fhir-ig-template> — source du template `hl7.fhir.template` (apparence officielle HL7/FHIR).
+- <https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html> — référence complète sur les templates IG Publisher disponibles, dont le template neutre `fhir.base.template`.
+
 ## Organisations GitHub de référence
 
 ### ANS (Agence du Numérique en Santé)
 
-<https://github.com/ansforge> — organisation officielle de l'ANS, contenant les Implementation Guides et ressources FHIR français (guides référentiels et guides projet, repo modèle `IG-modele`, style `interop-IG-style`).
+<https://github.com/ansforge> — organisation officielle de l'ANS, contenant les Implementation Guides et ressources FHIR français (guides référentiels et guides projet).
 
 ### Interop-Santé (association HL7 France)
 

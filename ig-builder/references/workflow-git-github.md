@@ -4,7 +4,6 @@
 
 - **Ne jamais éditer directement sur `main`** : créer une branche dédiée et une PR pour chaque changement, sauf instruction contraire explicite de l'utilisateur.
 - **Toujours confirmer avec l'utilisateur la branche cible et le dépôt exact** (organisation + nom de repo) avant de démarrer une opération Git (création de branche, push, PR) — ne jamais supposer `main` ou un repo par défaut.
-- **Préférer HTTPS à SSH** pour pousser vers GitHub (les push SSH ont déjà échoué de façon répétée dans cet environnement) ; basculer automatiquement en HTTPS si besoin.
 
 ## Template de Pull Request (ANS)
 
@@ -44,6 +43,5 @@ Le site de l'IG se déploie via GitHub Pages après un push — l'URL suit le fo
 
 - [ ] Le travail se fait sur une branche dédiée, jamais directement sur `main`.
 - [ ] La branche cible et le dépôt ont été confirmés avec l'utilisateur avant toute opération Git.
-- [ ] Le push utilise HTTPS.
 - [ ] La description de la PR suit le template du repo cible (`.github/pull_request_template.md` en priorité, sinon le template standard ci-dessus).
 - [ ] Le déploiement GitHub Pages est terminé avant toute lecture de `qa.html`.

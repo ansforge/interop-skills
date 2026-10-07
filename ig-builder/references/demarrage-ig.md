@@ -1,14 +1,15 @@
 # Démarrer un nouvel IG FHIR français
 
-## Repo modèle ANS
+## Repo modèle et template HL7 International
 
-Pour créer un IG (y compris un IG minimal de test ou de reproduction de bug), partir du modèle **`ansforge/IG-modele`** (<https://github.com/ansforge/IG-modele>) plutôt que de construire une structure de projet à la main :
+Pour créer un IG (y compris un IG minimal de test ou de reproduction de bug), partir du repo d'exemple officiel HL7 **`FHIR/sample-ig`** (<https://github.com/FHIR/sample-ig/>) plutôt que de construire une structure de projet à la main — c'est le point de départ maintenu par HL7 International pour tout nouvel IG, structure de dossiers et scripts de génération inclus.
 
-- `ig.ini` — utilise le template `ans.fr.template#current`.
-- `sushi-config.yaml` — `parameters`, i18n français/anglais, `pages`, `menu` renseigné directement dans ce fichier (voir plus bas).
-- Scripts `_genonce` / `_updatePublisher` — pour générer l'IG localement et maintenir à jour l'IG Publisher.
+L'écosystème ANS ne doit pas imposer son propre style visuel (logos, CSS) comme base par défaut. Le choix du template se fait dans `ig.ini` (`template = ...`), avec deux options maintenues par HL7 International :
 
-Ne pas confondre ce repo avec **`ansforge/interop-IG-style`** (<https://github.com/ansforge/interop-IG-style>) : ce second repo ne contient **que** le style ANS (logos, CSS) à intégrer dans un IG — ce n'est pas un squelette de projet complet, il ne faut pas en partir pour créer un nouvel IG.
+- **`fhir.base.template`** — template de base neutre, sans logo HL7/FHIR, explicitement conçu par HL7 comme socle pour la plupart des IGs **non-HL7** (c'est le choix par défaut à privilégier ici).
+- **`hl7.fhir.template`** — hérite de `fhir.base.template` et ajoute le logo et la charte graphique FHIR/HL7 ; source : <https://github.com/HL7/fhir-ig-template>. À utiliser seulement si l'apparence officielle HL7 est explicitement souhaitée.
+
+Référence complète sur les templates disponibles : <https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html>.
 
 ## Structure de `sushi-config.yaml`
 
@@ -22,7 +23,7 @@ Règle de heading level pour tous les fichiers `.md` des IGs (et uniquement ceux
 
 ## Vérification
 
-- [ ] Le projet a bien été initialisé à partir de `ansforge/IG-modele` (ou en conserve la structure — `ig.ini`, `sushi-config.yaml`, scripts de génération).
-- [ ] Le style ANS, s'il est utilisé, provient de `ansforge/interop-IG-style` et a été intégré, pas recopié à la main.
+- [ ] Le projet a bien été initialisé à partir de `FHIR/sample-ig` (ou en conserve la structure — `ig.ini`, `sushi-config.yaml`, scripts de génération).
+- [ ] Le template déclaré dans `ig.ini` est `fhir.base.template` (neutre) sauf besoin explicite de l'apparence HL7 (`hl7.fhir.template`) — pas un style ANS imposé par défaut.
 - [ ] Aucun `menu.xml` n'existe dans le projet — le menu est dans `sushi-config.yaml`.
 - [ ] Les fichiers `.md` de `input/pagecontent/` commencent tous à `###`.

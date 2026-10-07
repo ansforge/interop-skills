@@ -16,10 +16,10 @@ Ce skill s'adresse aux **auteurs et éditeurs d'Implementation Guides FHIR fran�
 
 ## 1. Démarrer un nouvel IG
 
-Toujours partir du repo modèle de l'ANS plutôt que de construire une structure de projet à la main. Détails complets : `references/demarrage-ig.md`.
+Toujours partir du repo d'exemple officiel HL7 International plutôt que de construire une structure de projet à la main. Détails complets : `references/demarrage-ig.md`.
 
-- Squelette de base : `ansforge/IG-modele` (`ig.ini`, `sushi-config.yaml`, scripts `_genonce`/`_updatePublisher`).
-- Style ANS (logos, CSS) : `ansforge/interop-IG-style` — à intégrer dans l'IG, ce n'est **pas** un squelette complet, ne pas partir de ce repo pour créer un nouvel IG.
+- Squelette de base : `FHIR/sample-ig` (`ig.ini`, `sushi-config.yaml`, scripts de génération).
+- Template (`ig.ini` > `template`) : `fhir.base.template` par défaut (neutre, sans logo) ; `hl7.fhir.template` seulement si l'apparence officielle HL7/FHIR est explicitement souhaitée. Ne pas imposer de style propre à un organisme par défaut.
 - Les menus se déclarent dans `sushi-config.yaml` (clé `menu:`), jamais via un `menu.xml`.
 - Les fichiers `.md` de `input/pagecontent/` doivent commencer au niveau `###` — les niveaux `#` et `##` sont générés automatiquement par le publisher.
 
@@ -39,7 +39,6 @@ Détails complets et template de PR ANS exact : `references/workflow-git-github.
 
 - Ne jamais éditer directement sur `main` : créer une branche dédiée + une PR pour chaque changement, sauf instruction contraire explicite.
 - Toujours confirmer avec l'utilisateur la branche cible et le dépôt exact avant toute opération Git (branching, push, PR).
-- Préférer HTTPS à SSH pour le push (les push SSH ont déjà échoué de façon répétée dans cet environnement).
 - Avant de créer une PR sur un repo ANS, lire `.github/pull_request_template.md` du repo cible et lui donner la priorité s'il diffère du template standard reproduit dans `references/workflow-git-github.md`.
 - Après un push, attendre la fin du déploiement GitHub Pages avant de lire `qa.html`.
 
