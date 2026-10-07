@@ -19,6 +19,10 @@ Source faisant autorité : <https://interop.esante.gouv.fr/ig/documentation/mod_
 
 Pour un `Instance`, les champs `InstanceOf` et `Usage` (`#example`, `#definition` ou `#inline`) sont obligatoires.
 
+## Quel profil hériter
+
+Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, un guide référentiel ANS...) couvre déjà tout ou partie du besoin, et en hériter plutôt que de repartir de la ressource FHIR de base. Catalogue des IGs/profils français existants : voir le skill `fhir-france` et son fichier `references/catalogue-igs.md` — pas dupliqué ici.
+
 ## Alias
 
 Tous les alias FSH doivent être centralisés dans un **unique fichier `aliases.fsh`** — ne pas définir d'alias dans un autre fichier.
