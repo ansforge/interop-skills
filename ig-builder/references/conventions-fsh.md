@@ -1,0 +1,47 @@
+# Conventions d'écriture FSH
+
+## Grammaire FSH
+
+Documentation de référence : <https://build.fhir.org/ig/HL7/fhir-shorthand> (FHIR Shorthand). Point de convention à ne pas oublier : les **commentaires FSH utilisent `//`, jamais `#`**.
+
+## Conventions de nommage par type d'artefact
+
+Source faisant autorité : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#modèle-de-nommage-par-ressource-fhir> — vérifier que la version consultée est la dernière avant de trancher un cas ambigu, et revérifier le numéro de section cité.
+
+| Artefact | Nom FSH | `Id` | Suffixe de nom de fichier |
+|---|---|---|---|
+| `Profile` | PascalCase | kebab-case | `...Profile.fsh` |
+| `Extension` | PascalCase | kebab-case | `...Extension.fsh` |
+| `Instance` (exemple, `Usage: #example`) | PascalCase | UUID pour une ressource patient/clinique (format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`) — pas exigé pour un `CapabilityStatement` ou un `SearchParameter` | `...Example.fsh` |
+| `Instance` (`InstanceOf: CapabilityStatement`) | PascalCase | kebab-case | `...Instance.fsh` |
+| `Instance` (`InstanceOf: SearchParameter`) | PascalCase ; `Id` au format `Ressource-code` ; `* code` en camelCase | — | `...SearchParameter.fsh` |
+| `Logical` | PascalCase | kebab-case | `...Logical.fsh` |
+
+Pour un `Instance`, les champs `InstanceOf` et `Usage` (`#example`, `#definition` ou `#inline`) sont obligatoires.
+
+## Alias
+
+Tous les alias FSH doivent être centralisés dans un **unique fichier `aliases.fsh`** — ne pas définir d'alias dans un autre fichier.
+
+## Bindings de terminologie
+
+- Le binding principal (extensible ou required selon le cas) va dans le binding par défaut de l'élément.
+- Les bindings additionnels (`additional binding`) sont réservés aux ValueSets alternatifs — ne pas les utiliser comme binding par défaut.
+- Conventions de nommage des terminologies elles-mêmes (`TRE_`, `JDV_`, `ASS_`) et serveurs de référence (SMT, IG Terminologies) : voir `fhir-france/references/terminologies.md` — ne pas dupliquer ces conventions ici, ce skill ne couvre que la rédaction FSH.
+
+## Cohérence avec `sushi-config.yaml`
+
+- Les URLs canoniques utilisées dans les fichiers FSH doivent correspondre à la valeur `canonical` de `sushi-config.yaml`.
+- Le `publisher` déclaré dans les `CapabilityStatement` doit correspondre au `publisher` de `sushi-config.yaml`.
+
+## Obligation de build
+
+**Après toute modification d'un fichier `.fsh` ou de `sushi-config.yaml`, lancer `sushi .` et corriger toutes les erreurs avant de committer ou de pousser.** Ne jamais laisser une erreur SUSHI non résolue dans un commit.
+
+## Vérification
+
+- [ ] Aucun commentaire `#` dans les fichiers `.fsh` (uniquement `//`).
+- [ ] Nommage (nom FSH, `Id`, suffixe de fichier) conforme au tableau ci-dessus pour chaque artefact.
+- [ ] Tous les alias sont dans `aliases.fsh`, aucun ailleurs.
+- [ ] Pas de placeholder résiduel (`xxx`, `TODO`, `TBD`, `FIXME`, `à compléter`, `<insérer`, `placeholder`).
+- [ ] `sushi .` s'exécute sans erreur.

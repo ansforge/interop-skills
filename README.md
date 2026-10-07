@@ -10,12 +10,9 @@ Si vous implémentez ou produisez des ressources FHIR en France (API, serveur FH
 
 ## Skills disponibles
 
-- **[fhir-france](fhir-france/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir la roadmap ci-dessous.
+- **[fhir-france](fhir-france/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir `ig-builder` ci-dessous.
 - **[fhir-france-en](fhir-france-en/SKILL.md)** — Doublon anglais synchronisé de `fhir-france`, même contenu, mêmes sources.
-
-## À venir
-
-- **ig-builder** — skill destiné aux auteurs/éditeurs d'IG FHIR français : rédaction FSH/SUSHI, process de release (`sushi-config.yaml`/`publication-request.json`), conventions d'alias, workflow GitHub des repos d'IG. S'appuiera notamment sur la documentation bonnes pratiques déjà rédigée sur <https://interop.esante.gouv.fr/ig/documentation/>.
+- **[ig-builder](ig-builder/SKILL.md)** — Pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG à partir du repo modèle ANS, conventions FSH/SUSHI (nommage, alias, bindings), workflow Git/GitHub (branche + PR, template ANS), préparation d'une release (correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json`, change-log, milestones). Ne couvre pas la consommation de ressources FHIR déjà publiées — voir `fhir-france` ci-dessus.
 
 ## Installation
 

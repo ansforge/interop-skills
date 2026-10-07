@@ -19,6 +19,13 @@
       "description": "FHIR France overview for developers producing FHIR resources: which version to use, IG catalogue, terminologies, CI-SIS governance",
       "category": "reference",
       "tags": ["fhir", "france", "health", "interoperability", "ans", "cisis", "api"]
+    },
+    {
+      "name": "ig-builder",
+      "source": "./ig-builder",
+      "description": "Guide pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG, conventions FSH/SUSHI, workflow Git/GitHub, préparation d'une release",
+      "category": "reference",
+      "tags": ["fhir", "fsh", "sushi", "ig-publisher", "ans", "france", "api"]
     }
   ]
 }
