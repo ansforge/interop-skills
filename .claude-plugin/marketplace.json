@@ -12,6 +12,13 @@
       "description": "Panorama FHIR France pour développeurs qui produisent des ressources FHIR : version à utiliser, catalogue des IGs, terminologies, gouvernance CI-SIS",
       "category": "reference",
       "tags": ["fhir", "france", "sante", "interoperabilite", "ans", "cisis", "api"]
+    },
+    {
+      "name": "fhir-france-en",
+      "source": "./fhir-france-en",
+      "description": "FHIR France overview for developers producing FHIR resources: which version to use, IG catalogue, terminologies, CI-SIS governance",
+      "category": "reference",
+      "tags": ["fhir", "france", "health", "interoperability", "ans", "cisis", "api"]
     }
   ]
 }
