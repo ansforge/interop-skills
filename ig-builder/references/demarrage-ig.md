@@ -4,7 +4,7 @@
 
 Pour créer un IG (y compris un IG minimal de test ou de reproduction de bug), partir du repo d'exemple officiel HL7 **`FHIR/sample-ig`** (<https://github.com/FHIR/sample-ig/>) plutôt que de construire une structure de projet à la main — c'est le point de départ maintenu par HL7 International pour tout nouvel IG, structure de dossiers et scripts de génération inclus.
 
-L'écosystème ANS ne doit pas imposer son propre style visuel (logos, CSS) comme base par défaut. Le choix du template se fait dans `ig.ini` (`template = ...`), avec deux options maintenues par HL7 International :
+Le choix du template se fait dans `ig.ini` (`template = ...`), avec deux options maintenues par HL7 International :
 
 - **`fhir.base.template`** — template de base neutre, sans logo HL7/FHIR, explicitement conçu par HL7 comme socle pour la plupart des IGs **non-HL7** (c'est le choix par défaut à privilégier ici).
 - **`hl7.fhir.template`** — hérite de `fhir.base.template` et ajoute le logo et la charte graphique FHIR/HL7 ; source : <https://github.com/HL7/fhir-ig-template>. À utiliser seulement si l'apparence officielle HL7 est explicitement souhaitée.
