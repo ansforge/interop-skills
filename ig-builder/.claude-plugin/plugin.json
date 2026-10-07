@@ -1,0 +1,13 @@
+{
+  "name": "ig-builder",
+  "displayName": "IG Builder",
+  "version": "1.0.0",
+  "description": "Guide pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG, conventions FSH/SUSHI, workflow Git/GitHub, préparation d'une release",
+  "author": {
+    "name": "ANS - Agence du Numérique en Santé",
+    "url": "https://esante.gouv.fr"
+  },
+  "homepage": "https://github.com/ansforge/interop-skills",
+  "repository": "https://github.com/ansforge/interop-skills",
+  "keywords": ["fhir", "fsh", "sushi", "ig-publisher", "ans", "france", "api"]
+}
