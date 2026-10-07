@@ -1,12 +1,12 @@
 ---
 name: fhir-france
-description: "Oriente les développeurs qui implémentent ou produisent des ressources FHIR en France (API, serveur FHIR, stockage, batch...) — quelle version FHIR utiliser (R4 vs R5 vs R6), catalogue des IGs publiés à implémenter (FR Core, guides ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, comment faire émerger une spec manquante). Ne couvre pas la rédaction/publication d'un IG (FSH/SUSHI, release) — réservé à un futur skill pour auteurs d'IG. Utilise ce skill proactivement dès qu'un développeur pose une question sur FHIR en France pour produire des ressources conformes — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS. Le contenu date vite : vérifie le bloc de date en tête du SKILL.md, et revérifie les sources si la date est ancienne."
+description: "Oriente les développeurs qui implémentent ou produisent des ressources FHIR en France (API, serveur FHIR, stockage, batch...) — quelle version FHIR utiliser (R4 vs R5 vs R6), catalogue des IGs publiés à implémenter (FR Core, guides ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, comment faire émerger une spec manquante). Ne couvre pas la rédaction/publication d'un IG (FSH/SUSHI, release) — réservé à un futur skill pour auteurs d'IG. Utilise ce skill proactivement dès qu'un développeur pose une question sur FHIR en France pour produire des ressources conformes — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS. Le contenu date vite : vérifie systématiquement s'il existe des versions plus récentes des sources citées avant de répondre."
 ---
 
 # FHIR en France pour les développeurs qui produisent des ressources FHIR
 
 > **Dernière mise à jour du contenu : 2026-10-01**
-> Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Si cette date a plus de quelques mois, revérifie au moins les points ci-dessous avant de répondre avec certitude.
+> Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Vérifie systématiquement s'il existe des versions plus récentes des points ci-dessous avant de répondre avec certitude.
 
 ## Objectif de ce skill
 
@@ -53,7 +53,7 @@ Deux organisations principales publient des IGs FHIR pour la France :
 
 Plusieurs IGs sont actuellement en statut Draft/WIP du fait du calendrier **EHDS** (European Health Data Space), qui impose la production de 6 catégories de documents de santé en FHIR : Patient Summary (VSM), prescription électronique, dispensation électronique, compte-rendu de biologie, lettre de sortie d'hospitalisation, compte-rendu d'imagerie médicale et images médicales. Informations détaillées des IG français : `references/catalogue-igs.md`.
 
-Table complète (IGs, statuts, versions, mainteneurs, URLs) : `references/catalogue-igs.md`.
+Catalogue (non exhaustif — statuts, versions, mainteneurs, URLs) : `references/catalogue-igs.md`. Si l'IG recherché n'y figure pas, vérifier le catalogue officiel <https://interop.esante.gouv.fr/ig/fhir/> ou le flux <https://interop.esante.gouv.fr/ig/fhir/package-feed.xml> avant de conclure qu'aucun IG n'existe pour ce cas d'usage.
 
 ## 3. Terminologies françaises
 
