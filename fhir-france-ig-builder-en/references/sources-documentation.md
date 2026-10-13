@@ -21,11 +21,12 @@
 
 ## Example repo and templates
 
-- <https://github.com/FHIR/sample-ig/> — official HL7 example repo, recommended starting point for an IG outside the ANS ecosystem (see `demarrage-ig.md`).
+- <https://github.com/FHIR/sample-ig/> — official HL7 example repo, recommended starting point for an IG outside the ANS/Interop-Santé ecosystem (see `demarrage-ig.md`).
 - <https://github.com/HL7/fhir-ig-template> — source of the `hl7.fhir.template` template (official HL7/FHIR look).
 - <https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html> — full reference on available IG Publisher templates, including the neutral `fhir.base.template`.
 - <https://github.com/ansforge/IG-modele> — ANS base skeleton, recommended starting point for an ANS/ansforge IG (see `demarrage-ig.md`).
 - <https://github.com/ansforge/interop-IG-style> — ANS style only (logos, CSS) to integrate into the IG, not a complete skeleton — not to be confused with `IG-modele`.
+- <https://github.com/Interop-Sante/hl7.ig.fr.sample> — Interop-Santé base skeleton, recommended starting point for an Interop-Santé IG (see `demarrage-ig.md`).
 
 ## Reference GitHub organizations
 
