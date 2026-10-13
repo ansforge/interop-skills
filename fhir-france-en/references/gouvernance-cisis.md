@@ -39,7 +39,7 @@ Statement of need (*expression de besoin*) → screening by the Comité d'Instru
   2. Naming conventions for all FHIR artifact types — useful for recognizing/locating profiles, extensions, value sets within an IG.
   3. R4-by-default recommendation (see `versions-fhir.md`).
   4. Pointer to terminology naming conventions (see `terminologies.md`).
-- **Content reserved for IG authors/editors** (out of scope for this skill, planned for a future `ig-builder` skill): how to write conformance resources (profiles, extensions, terminology resources), the FHIR IG release process mapped to CI-SIS statuses, FSH/SUSHI alias management conventions, GitHub workflow rules for IG repos.
+- **Content reserved for IG authors/editors** (out of scope for this skill — see the [`ig-builder`](../../ig-builder/SKILL.md) skill, currently French-only): how to write conformance resources (profiles, extensions, terminology resources), the FHIR IG release process mapped to CI-SIS statuses, FSH/SUSHI alias management conventions, GitHub workflow rules for IG repos.
 
 ## CI-SIS status ↔ IG configuration mapping (out of scope for this skill)
 
@@ -47,7 +47,7 @@ The ANS publishes a mapping table between CI-SIS statuses (draft, public-comment
 
 **Authoritative source**: <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir>.
 
-This table, along with the rest of the IG authoring/publishing best practices, is intended to live in a future `ig-builder` skill for IG authors/editors.
+This table, along with the rest of the IG authoring/publishing best practices, is covered by the [`ig-builder`](../../ig-builder/SKILL.md) skill for IG authors/editors (currently French-only) — see `ig-builder/references/preparation-release.md`.
 
 ## Sources
 

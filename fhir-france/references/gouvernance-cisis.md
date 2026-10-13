@@ -39,7 +39,7 @@ Expression de besoin → filtrage par le Comité d'Instruction contre des critè
   2. Conventions de nommage pour tous les types d'artefacts FHIR — utile pour reconnaître/retrouver profils, extensions, value sets dans un IG.
   3. Recommandation R4 par défaut (voir `versions-fhir.md`).
   4. Pointeur vers les conventions de nommage des terminologies (voir `terminologies.md`).
-- **Contenu réservé aux auteurs/éditeurs d'IG** (hors périmètre de ce skill, prévu pour un futur skill `ig-builder`) : comment rédiger les ressources de conformance (profils, extensions, ressources de terminologie), le processus de release d'IG FHIR mappé aux statuts CI-SIS, les conventions de gestion des alias FSH/SUSHI, les règles de workflow GitHub des repos d'IG.
+- **Contenu réservé aux auteurs/éditeurs d'IG** (hors périmètre de ce skill — voir le skill [`ig-builder`](../../ig-builder/SKILL.md)) : comment rédiger les ressources de conformance (profils, extensions, ressources de terminologie), le processus de release d'IG FHIR mappé aux statuts CI-SIS, les conventions de gestion des alias FSH/SUSHI, les règles de workflow GitHub des repos d'IG.
 
 ## Correspondance statut CI-SIS ↔ configuration d'IG (hors périmètre de ce skill)
 
@@ -47,7 +47,7 @@ L'ANS publie un tableau de correspondance entre les statuts CI-SIS (draft, publi
 
 **Source faisant autorité** : <https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir>.
 
-Ce tableau, ainsi que le reste des bonnes pratiques de rédaction/publication d'IG, a vocation à vivre dans un futur skill `ig-builder` destiné aux auteurs/éditeurs d'IG.
+Ce tableau, ainsi que le reste des bonnes pratiques de rédaction/publication d'IG, est couvert par le skill [`ig-builder`](../../ig-builder/SKILL.md), destiné aux auteurs/éditeurs d'IG — voir `ig-builder/references/preparation-release.md`.
 
 ## Sources
 
