@@ -8,7 +8,7 @@ description: "Oriente les développeurs qui implémentent ou produisent des ress
 > **Dernière mise à jour du contenu : 2026-10-01**
 > Ce paysage évolue vite (nouveaux IGs, changements de statut, versions de terminologies). Vérifie systématiquement s'il existe des versions plus récentes des points ci-dessous avant de répondre avec certitude.
 
-**Doublon anglais synchronisé** : `fhir-france-en/SKILL.md` en est la traduction. Toute mise à jour de contenu ici doit être répercutée là-bas (et inversement).
+**Doublon anglais synchronisé** : `fhir-france-implementer-en/SKILL.md` en est la traduction. Toute mise à jour de contenu ici doit être répercutée là-bas (et inversement).
 
 ## Objectif de ce skill
 

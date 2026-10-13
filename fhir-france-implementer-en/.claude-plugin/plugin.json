@@ -1,6 +1,6 @@
 {
-  "name": "fhir-france-en",
-  "displayName": "FHIR France (EN)",
+  "name": "fhir-france-implementer-en",
+  "displayName": "FHIR France Implementer (EN)",
   "version": "1.1.0",
   "description": "FHIR France overview for developers producing FHIR resources: which version to use, IG catalogue, terminologies, CI-SIS governance",
   "author": {

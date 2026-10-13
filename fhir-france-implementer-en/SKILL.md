@@ -1,5 +1,5 @@
 ---
-name: fhir-france-en
+name: fhir-france-implementer-en
 description: "Guides developers who implement or produce FHIR resources in France (API, FHIR server, storage, batch...) — which FHIR version to use (R4 vs R5 vs R6), catalogue of published Implementation Guides to implement (FR Core, ANS/ansforge guides, Interop-Santé work), French terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions) and CI-SIS governance (doctrine, committee structure, how to request a missing spec). Does not cover writing/publishing an IG (FSH/SUSHI, release) — see the `fhir-france-ig-builder` skill for IG authors/editors. Use this skill proactively whenever a developer asks a question about FHIR in France to produce conformant resources — which version to choose, which IGs exist, where to find terminologies, how CI-SIS is governed. Content ages fast: check the date block at the top of SKILL.md, and re-verify sources if the date is old."
 ---
 
