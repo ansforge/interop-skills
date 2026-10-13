@@ -1,11 +1,12 @@
 # Starting a new French FHIR IG
 
-## Skeleton repo: outside ANS vs. ANS
+## Skeleton repo: outside ANS vs. ANS vs. Interop-Santé
 
 To create an IG (including a minimal test or bug-reproduction IG), never build a project structure by hand — always start from a maintained skeleton repo, chosen according to the IG's scope:
 
-- **IG outside the ANS ecosystem**: start from the official HL7 example repo **`FHIR/sample-ig`** (<https://github.com/FHIR/sample-ig/>) — this is the starting point maintained by HL7 International for any new IG, folder structure and generation scripts included.
+- **IG outside the ANS/Interop-Santé ecosystem**: start from the official HL7 example repo **`FHIR/sample-ig`** (<https://github.com/FHIR/sample-ig/>) — this is the starting point maintained by HL7 International for any new IG, folder structure and generation scripts included.
 - **ANS/ansforge IG**: start from the **`ansforge/IG-modele`** repo (<https://github.com/ansforge/IG-modele>) — the ANS base skeleton (`ig.ini` with the `ans.fr.template#current` template, `sushi-config.yaml`, `_genonce`/`_updatePublisher` scripts), not to be confused with `ansforge/interop-IG-style`, which only provides the ANS style (logos, CSS) to integrate into the IG, not a complete skeleton.
+- **Interop-Santé IG**: start from the **`Interop-Sante/hl7.ig.fr.sample`** repo (<https://github.com/Interop-Sante/hl7.ig.fr.sample>) — the base skeleton maintained by the Interopsanté HL7 France association for IGs in this scope (e.g. `hl7.fhir.fr.core`).
 
 ## Template
 
@@ -28,7 +29,7 @@ Heading level rule for all `.md` files in IGs (and only IG files): they must sta
 
 ## Verification
 
-- [ ] The project was correctly initialized from the right skeleton repo for its scope — `FHIR/sample-ig` outside ANS, `ansforge/IG-modele` for an ANS/ansforge IG (or retains its structure — `ig.ini`, `sushi-config.yaml`, generation scripts).
+- [ ] The project was correctly initialized from the right skeleton repo for its scope — `FHIR/sample-ig` outside ANS/Interop-Santé, `ansforge/IG-modele` for an ANS/ansforge IG, `Interop-Sante/hl7.ig.fr.sample` for an Interop-Santé IG (or retains its structure — `ig.ini`, `sushi-config.yaml`, generation scripts).
 - [ ] For an IG outside ANS, the template declared in `ig.ini` is `fhir.base.template` (neutral) unless the official HL7 look is explicitly needed (`hl7.fhir.template`) — not an ANS style imposed by default. For an ANS IG, the template is `ans.fr.template#current`.
 - [ ] No `menu.xml` exists in the project — the menu is in `sushi-config.yaml`.
 - [ ] All `.md` files in `input/pagecontent/` start at `###`.
