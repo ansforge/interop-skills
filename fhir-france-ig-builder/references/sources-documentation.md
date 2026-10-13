@@ -19,11 +19,13 @@
 - <https://github.com/HL7/fhir-ig-publisher> — IG Publisher, outil de génération des sites d'IG.
 - <https://github.com/FHIR/sushi> — SUSHI, le compilateur FSH → FHIR.
 
-## Repo d'exemple et templates HL7 International
+## Repo d'exemple et templates
 
-- <https://github.com/FHIR/sample-ig/> — repo d'exemple officiel HL7, point de départ recommandé pour tout nouvel IG (voir `demarrage-ig.md`).
+- <https://github.com/FHIR/sample-ig/> — repo d'exemple officiel HL7, point de départ recommandé pour un IG hors écosystème ANS (voir `demarrage-ig.md`).
 - <https://github.com/HL7/fhir-ig-template> — source du template `hl7.fhir.template` (apparence officielle HL7/FHIR).
 - <https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html> — référence complète sur les templates IG Publisher disponibles, dont le template neutre `fhir.base.template`.
+- <https://github.com/ansforge/IG-modele> — squelette de base ANS, point de départ recommandé pour un IG ANS/ansforge (voir `demarrage-ig.md`).
+- <https://github.com/ansforge/interop-IG-style> — style ANS uniquement (logos, CSS) à intégrer dans l'IG, pas un squelette complet — à ne pas confondre avec `IG-modele`.
 
 ## Organisations GitHub de référence
 
@@ -37,4 +39,4 @@
 
 ## Pour aller plus loin
 
-Pour les questions qui ne concernent pas la rédaction/publication d'un IG mais sa consommation (quelle version FHIR utiliser, quels IGs existent déjà, terminologies françaises, gouvernance CI-SIS), voir le skill `fhir-france` et son fichier `references/catalogue-igs.md` pour le catalogue des IGs français existants.
+Pour les questions qui ne concernent pas la rédaction/publication d'un IG mais sa consommation (quelle version FHIR utiliser, quels IGs existent déjà, terminologies françaises, gouvernance CI-SIS), voir le skill `fhir-france-implementer` et son fichier `references/catalogue-igs.md` pour le catalogue des IGs français existants.

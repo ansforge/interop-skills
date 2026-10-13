@@ -1,24 +1,26 @@
 ---
-name: ig-builder
-description: "Guide les auteurs/éditeurs d'Implementation Guide (IG) FHIR français dans la rédaction et la publication d'un IG — démarrer un nouvel IG à partir du repo modèle ANS, conventions FSH/SUSHI (nommage, alias, bindings), workflow Git/GitHub (branche + PR, template ANS), préparation d'une release (correspondance statut CI-SIS ↔ sushi-config.yaml/publication-request.json, change-log, milestones). Ne couvre pas la consommation de ressources FHIR déjà publiées (quelle version FHIR utiliser, quels IGs existent, terminologies, gouvernance CI-SIS) — voir le skill `fhir-france` pour ça. Utilise ce skill proactivement dès qu'un utilisateur rédige ou publie un IG FHIR français — crée un nouveau profil/extension/exemple FSH, configure un sushi-config.yaml, prépare une release, ou ouvre une PR sur un repo ansforge/Interop-Sante."
+name: fhir-france-ig-builder
+description: "Guide les auteurs/éditeurs d'Implementation Guide (IG) FHIR français dans la rédaction et la publication d'un IG — démarrer un nouvel IG à partir du repo modèle ANS, conventions FSH/SUSHI (nommage, alias, bindings), workflow Git/GitHub (branche + PR, template ANS), préparation d'une release (correspondance statut CI-SIS ↔ sushi-config.yaml/publication-request.json, change-log, milestones). Ne couvre pas la consommation de ressources FHIR déjà publiées (quelle version FHIR utiliser, quels IGs existent, terminologies, gouvernance CI-SIS) — voir le skill `fhir-france-implementer` pour ça. Utilise ce skill proactivement dès qu'un utilisateur rédige ou publie un IG FHIR français — crée un nouveau profil/extension/exemple FSH, configure un sushi-config.yaml, prépare une release, ou ouvre une PR sur un repo ansforge/Interop-Sante."
 ---
 
 # Rédiger et publier un IG FHIR français
 
-> **Dernière mise à jour du contenu : 2026-10-07**
+> **Dernière mise à jour du contenu : 2026-10-13**
 > Ce paysage évolue (nouvelles versions du repo modèle, évolutions du publisher, de SUSHI, des bonnes pratiques ANS). Vérifie systématiquement s'il existe des versions plus récentes des points ci-dessous avant de répondre avec certitude.
+
+**Doublon anglais synchronisé** : `fhir-france-ig-builder-en/SKILL.md` en est la traduction. Toute mise à jour de contenu ici doit être répercutée là-bas (et inversement).
 
 ## Objectif de ce skill
 
-Ce skill s'adresse aux **auteurs et éditeurs d'Implementation Guides FHIR français** — rédaction FSH/SUSHI, structuration du projet, workflow Git/GitHub, préparation d'une release — par opposition aux développeurs qui consomment ou produisent des ressources FHIR conformes à un IG déjà publié (pour ça, voir le skill `fhir-france`). Il aide à retrouver **la bonne convention ou la bonne étape au bon moment** plutôt que de laisser l'utilisateur réinventer une structure de projet ou un process de release déjà établi par l'ANS.
+Ce skill s'adresse aux **auteurs et éditeurs d'Implementation Guides FHIR français** — rédaction FSH/SUSHI, structuration du projet, workflow Git/GitHub, préparation d'une release — par opposition aux développeurs qui consomment ou produisent des ressources FHIR conformes à un IG déjà publié (pour ça, voir le skill `fhir-france-implementer`). Il aide à retrouver **la bonne convention ou la bonne étape au bon moment** plutôt que de laisser l'utilisateur réinventer une structure de projet ou un process de release déjà établi par l'ANS.
 
-**Hors périmètre** : quelle version FHIR utiliser, quels IGs existent déjà, où trouver les terminologies françaises, comment est gouverné le CI-SIS — voir le skill `fhir-france` et ses fichiers `references/`.
+**Hors périmètre** : quelle version FHIR utiliser, quels IGs existent déjà, où trouver les terminologies françaises, comment est gouverné le CI-SIS — voir le skill `fhir-france-implementer` et ses fichiers `references/`.
 
 ## 1. Démarrer un nouvel IG
 
-Toujours partir du repo d'exemple officiel HL7 International plutôt que de construire une structure de projet à la main. Détails complets : `references/demarrage-ig.md`.
+Toujours partir d'un repo squelette plutôt que de construire une structure de projet à la main. Détails complets : `references/demarrage-ig.md`.
 
-- Squelette de base : `FHIR/sample-ig` (`ig.ini`, `sushi-config.yaml`, scripts de génération).
+- Squelette de base : **`FHIR/sample-ig`** pour un IG hors écosystème ANS, **`ansforge/IG-modele`** pour un IG ANS/ansforge (`ig.ini`, `sushi-config.yaml`, scripts de génération).
 - Template (`ig.ini` > `template`) : `fhir.base.template` par défaut (neutre, sans logo) ; `hl7.fhir.template` seulement si l'apparence officielle HL7/FHIR est explicitement souhaitée. Ne pas imposer de style propre à un organisme par défaut.
 - Les menus se déclarent dans `sushi-config.yaml` (clé `menu:`), jamais via un `menu.xml`.
 - Les fichiers `.md` de `input/pagecontent/` doivent commencer au niveau `###` — les niveaux `#` et `##` sont générés automatiquement par le publisher.
@@ -28,10 +30,10 @@ Toujours partir du repo d'exemple officiel HL7 International plutôt que de cons
 Détails complets, conventions de nommage par type d'artefact et source faisant autorité : `references/conventions-fsh.md`.
 
 - Commentaires FSH : `//`, jamais `#`.
-- Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, guide référentiel ANS...) couvre déjà le besoin et en hériter : voir le skill `fhir-france` et son fichier `references/catalogue-igs.md` (pas dupliqué ici).
+- Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, guide référentiel ANS...) couvre déjà le besoin et en hériter : voir le skill `fhir-france-implementer` et son fichier `references/catalogue-igs.md` (pas dupliqué ici).
 - Tous les alias dans un unique `aliases.fsh` — ne pas en définir ailleurs.
 - Binding de terminologie par défaut : le binding principal (extensible/required) ; réserver les bindings additionnels aux ValueSets alternatifs.
-- Conventions `TRE_`/`JDV_`/`ASS_` pour les terminologies : voir `fhir-france/references/terminologies.md` (pas dupliqué ici).
+- Conventions `TRE_`/`JDV_`/`ASS_` pour les terminologies : voir `fhir-france-implementer/references/terminologies.md` (pas dupliqué ici).
 - **Après toute modification d'un `.fsh` ou de `sushi-config.yaml`, lancer `sushi .` et corriger toutes les erreurs avant de committer ou pousser.**
 
 ## 3. Workflow Git/GitHub

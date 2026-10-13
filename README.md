@@ -10,9 +10,10 @@ Si vous implémentez ou produisez des ressources FHIR en France (API, serveur FH
 
 ## Skills disponibles
 
-- **[fhir-france](fhir-france/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir `ig-builder` ci-dessous.
-- **[fhir-france-en](fhir-france-en/SKILL.md)** — Doublon anglais synchronisé de `fhir-france`, même contenu, mêmes sources.
-- **[ig-builder](ig-builder/SKILL.md)** — Pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG à partir du repo modèle ANS, conventions FSH/SUSHI (nommage, alias, bindings), workflow Git/GitHub (branche + PR, template ANS), préparation d'une release (correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json`, change-log, milestones). Ne couvre pas la consommation de ressources FHIR déjà publiées — voir `fhir-france` ci-dessus.
+- **[fhir-france-implementer](fhir-france-implementer/SKILL.md)** — Pour les développeurs qui implémentent ou produisent des ressources FHIR (API, serveur FHIR, stockage, batch...) : quelle version FHIR utiliser (R4/R5/R6, alignement EHDS), catalogue des IGs publiés (FR Core, guides ANS, OSIRIS...), terminologies (SMT, NOS, conventions TRE_/JDV_/ASS_), gouvernance CI-SIS. Ne couvre pas la rédaction/publication d'IG (FSH/SUSHI, release) — voir `fhir-france-ig-builder` ci-dessous.
+- **[fhir-france-implementer-en](fhir-france-implementer-en/SKILL.md)** — Doublon anglais synchronisé de `fhir-france-implementer`, même contenu, mêmes sources.
+- **[fhir-france-ig-builder](fhir-france-ig-builder/SKILL.md)** — Pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG à partir du repo modèle ANS, conventions FSH/SUSHI (nommage, alias, bindings), workflow Git/GitHub (branche + PR, template ANS), préparation d'une release (correspondance statut CI-SIS ↔ `sushi-config.yaml`/`publication-request.json`, change-log, milestones). Ne couvre pas la consommation de ressources FHIR déjà publiées — voir `fhir-france-implementer` ci-dessus.
+- **[fhir-france-ig-builder-en](fhir-france-ig-builder-en/SKILL.md)** — Doublon anglais synchronisé de `fhir-france-ig-builder`, même contenu, mêmes sources.
 
 ## Installation
 
@@ -20,26 +21,26 @@ Si vous implémentez ou produisez des ressources FHIR en France (API, serveur FH
 
 ```
 claude plugin marketplace add ansforge/interop-skills
-claude plugin install fhir-france@interop-skills
+claude plugin install fhir-france-implementer@interop-skills
 ```
 
 Ou, dans une session Claude Code interactive :
 
 ```
 /plugin marketplace add ansforge/interop-skills
-/plugin install fhir-france@interop-skills
+/plugin install fhir-france-implementer@interop-skills
 ```
 
 ### Installation manuelle (sans plugin)
 
-Clonez ou copiez le dossier `fhir-france/` dans votre répertoire de skills Claude Code :
+Clonez ou copiez le dossier `fhir-france-implementer/` dans votre répertoire de skills Claude Code :
 
-- Pour tous vos projets : `~/.claude/skills/fhir-france/`
-- Pour un projet donné : `<votre-projet>/.claude/skills/fhir-france/`
+- Pour tous vos projets : `~/.claude/skills/fhir-france-implementer/`
+- Pour un projet donné : `<votre-projet>/.claude/skills/fhir-france-implementer/`
 
 ## Contribuer
 
-Un cas d'usage non couvert par un IG existant ? Avant de concevoir une solution ad hoc, écrivez une **expression de besoin** auprès de l'ANS — c'est le point d'entrée officiel du processus de gouvernance CI-SIS (voir `fhir-france/references/gouvernance-cisis.md`).
+Un cas d'usage non couvert par un IG existant ? Avant de concevoir une solution ad hoc, écrivez une **expression de besoin** auprès de l'ANS — c'est le point d'entrée officiel du processus de gouvernance CI-SIS (voir `fhir-france-implementer/references/gouvernance-cisis.md`).
 
 Une spec référencée ici pose un problème concret (ambiguïté, question d'implémentation, suggestion) ? Les retours sont les bienvenus via les **issues GitHub du repo concerné** (ex. `github.com/ansforge/<repo>/issues`).
 

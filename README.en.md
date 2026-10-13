@@ -10,9 +10,10 @@ If you implement or produce FHIR resources in France (API, FHIR server, storage,
 
 ## Available skills
 
-- **[fhir-france-en](fhir-france-en/SKILL.md)** — For developers who implement or produce FHIR resources (API, FHIR server, storage, batch...): which FHIR version to use (R4/R5/R6, EHDS alignment), catalogue of published IGs (FR Core, ANS guides, OSIRIS...), terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions), CI-SIS governance. Does not cover IG authoring/publishing (FSH/SUSHI, release) — see `ig-builder` below.
-- **[fhir-france](fhir-france/SKILL.md)** — Synchronized French twin of `fhir-france-en`, same content, same sources.
-- **[ig-builder](ig-builder/SKILL.md)** — *French only for now.* For French FHIR IG authors/editors: starting an IG from the ANS template repo, FSH/SUSHI conventions (naming, aliases, bindings), Git/GitHub workflow (branch + PR, ANS template), release preparation (CI-SIS status ↔ `sushi-config.yaml`/`publication-request.json` mapping, change-log, milestones). Does not cover consuming already-published FHIR resources — see `fhir-france-en` above.
+- **[fhir-france-implementer-en](fhir-france-implementer-en/SKILL.md)** — For developers who implement or produce FHIR resources (API, FHIR server, storage, batch...): which FHIR version to use (R4/R5/R6, EHDS alignment), catalogue of published IGs (FR Core, ANS guides, OSIRIS...), terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions), CI-SIS governance. Does not cover IG authoring/publishing (FSH/SUSHI, release) — see `fhir-france-ig-builder-en` below.
+- **[fhir-france-implementer](fhir-france-implementer/SKILL.md)** — Synchronized French twin of `fhir-france-implementer-en`, same content, same sources.
+- **[fhir-france-ig-builder-en](fhir-france-ig-builder-en/SKILL.md)** — For French FHIR IG authors/editors: starting an IG from the ANS template repo, FSH/SUSHI conventions (naming, aliases, bindings), Git/GitHub workflow (branch + PR, ANS template), release preparation (CI-SIS status ↔ `sushi-config.yaml`/`publication-request.json` mapping, change-log, milestones). Does not cover consuming already-published FHIR resources — see `fhir-france-implementer-en` above.
+- **[fhir-france-ig-builder](fhir-france-ig-builder/SKILL.md)** — Synchronized French twin of `fhir-france-ig-builder-en`, same content, same sources.
 
 ## Installation
 
@@ -20,26 +21,26 @@ If you implement or produce FHIR resources in France (API, FHIR server, storage,
 
 ```
 claude plugin marketplace add ansforge/interop-skills
-claude plugin install fhir-france-en@interop-skills
+claude plugin install fhir-france-implementer-en@interop-skills
 ```
 
 Or, in an interactive Claude Code session:
 
 ```
 /plugin marketplace add ansforge/interop-skills
-/plugin install fhir-france-en@interop-skills
+/plugin install fhir-france-implementer-en@interop-skills
 ```
 
 ### Manual installation (without the plugin system)
 
-Clone or copy the `fhir-france-en/` folder into your Claude Code skills directory:
+Clone or copy the `fhir-france-implementer-en/` folder into your Claude Code skills directory:
 
-- For all your projects: `~/.claude/skills/fhir-france-en/`
-- For a given project: `<your-project>/.claude/skills/fhir-france-en/`
+- For all your projects: `~/.claude/skills/fhir-france-implementer-en/`
+- For a given project: `<your-project>/.claude/skills/fhir-france-implementer-en/`
 
 ## Contributing
 
-A use case not covered by an existing IG? Before designing an ad hoc solution, write a **statement of need** (*expression de besoin*) to the ANS — the official entry point of the CI-SIS governance process (see `fhir-france-en/references/gouvernance-cisis.md`).
+A use case not covered by an existing IG? Before designing an ad hoc solution, write a **statement of need** (*expression de besoin*) to the ANS — the official entry point of the CI-SIS governance process (see `fhir-france-implementer-en/references/gouvernance-cisis.md`).
 
 A spec referenced here has a concrete problem (ambiguity, implementation question, suggestion)? Feedback is welcome via the **GitHub issues of the relevant repo** (e.g. `github.com/ansforge/<repo>/issues`).
 

@@ -21,7 +21,7 @@ Pour un `Instance`, les champs `InstanceOf` et `Usage` (`#example`, `#definition
 
 ## Quel profil hériter
 
-Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, un guide référentiel ANS...) couvre déjà tout ou partie du besoin, et en hériter plutôt que de repartir de la ressource FHIR de base. Catalogue des IGs/profils français existants : voir le skill `fhir-france` et son fichier `references/catalogue-igs.md` — pas dupliqué ici.
+Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, un guide référentiel ANS...) couvre déjà tout ou partie du besoin, et en hériter plutôt que de repartir de la ressource FHIR de base. Catalogue des IGs/profils français existants : voir le skill `fhir-france-implementer` et son fichier `references/catalogue-igs.md` — pas dupliqué ici.
 
 ## Alias
 
@@ -31,7 +31,7 @@ Tous les alias FSH doivent être centralisés dans un **unique fichier `aliases.
 
 - Le binding principal (extensible ou required selon le cas) va dans le binding par défaut de l'élément.
 - Les bindings additionnels (`additional binding`) sont réservés aux ValueSets alternatifs — ne pas les utiliser comme binding par défaut.
-- Conventions de nommage des terminologies elles-mêmes (`TRE_`, `JDV_`, `ASS_`) et serveurs de référence (SMT, IG Terminologies) : voir `fhir-france/references/terminologies.md` — ne pas dupliquer ces conventions ici, ce skill ne couvre que la rédaction FSH.
+- Conventions de nommage des terminologies elles-mêmes (`TRE_`, `JDV_`, `ASS_`) et serveurs de référence (SMT, IG Terminologies) : voir `fhir-france-implementer/references/terminologies.md` — ne pas dupliquer ces conventions ici, ce skill ne couvre que la rédaction FSH.
 
 ## Cohérence avec `sushi-config.yaml`
 
