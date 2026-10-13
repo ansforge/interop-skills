@@ -33,7 +33,6 @@ Détails complets, conventions de nommage par type d'artefact et source faisant 
 - Avant de créer un nouveau `Profile`, vérifier si un profil existant (FR Core, guide référentiel ANS...) couvre déjà le besoin et en hériter : voir le skill `fhir-france-implementer` et son fichier `references/catalogue-igs.md` (pas dupliqué ici).
 - Tous les alias dans un unique `aliases.fsh` — ne pas en définir ailleurs.
 - Binding de terminologie par défaut : le binding principal (extensible/required) ; réserver les bindings additionnels aux ValueSets alternatifs.
-- Conventions `TRE_`/`JDV_`/`ASS_` pour les terminologies : voir `fhir-france-implementer/references/terminologies.md` (pas dupliqué ici).
 - **Après toute modification d'un `.fsh` ou de `sushi-config.yaml`, lancer `sushi .` et corriger toutes les erreurs avant de committer ou pousser.**
 
 ## 3. Workflow Git/GitHub

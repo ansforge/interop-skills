@@ -1,6 +1,6 @@
 ---
 name: fhir-france-implementer
-description: "Oriente les développeurs qui implémentent ou produisent des ressources FHIR en France (API, serveur FHIR, stockage, batch...) — quelle version FHIR utiliser (R4 vs R5 vs R6), catalogue des IGs publiés à implémenter (FR Core, guides ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS, conventions TRE_/JDV_/ASS_) et gouvernance CI-SIS (doctrine, comitologie, comment faire émerger une spec manquante). Ne couvre pas la rédaction/publication d'un IG (FSH/SUSHI, release) — voir le skill `fhir-france-ig-builder` pour les auteurs/éditeurs d'IG. Utilise ce skill proactivement dès qu'un développeur pose une question sur FHIR en France pour produire des ressources conformes — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS. Le contenu date vite : vérifie systématiquement s'il existe des versions plus récentes des sources citées avant de répondre."
+description: "Oriente les développeurs qui implémentent ou produisent des ressources FHIR en France (API, serveur FHIR, stockage, batch...) — quelle version FHIR utiliser (R4 vs R5 vs R6), catalogue des IGs publiés à implémenter (FR Core, guides ANS/ansforge, travaux Interop-Santé), terminologies françaises (SMT, NOS) et gouvernance CI-SIS (doctrine, comitologie, comment faire émerger une spec manquante). Ne couvre pas la rédaction/publication d'un IG (FSH/SUSHI, release) — voir le skill `fhir-france-ig-builder` pour les auteurs/éditeurs d'IG. Utilise ce skill proactivement dès qu'un développeur pose une question sur FHIR en France pour produire des ressources conformes — quelle version choisir, quels IGs existent, où trouver les terminologies, comment est gouverné le CI-SIS. Le contenu date vite : vérifie systématiquement s'il existe des versions plus récentes des sources citées avant de répondre."
 ---
 
 # FHIR en France pour les développeurs qui produisent des ressources FHIR
@@ -61,9 +61,8 @@ Catalogue (non exhaustif — statuts, versions, mainteneurs, URLs) : `references
 
 - **SMT (Serveur Multi-Terminologies)** — <https://smt.esante.gouv.fr/fhir> — serveur de terminologie national, en FHIR R4, référencé comme autoritatif dans le registre officiel HL7 FHIR Foundation (code `ans-fr-tx`) pour les terminologies ANS (mos.esante.gouv.fr), SMT lui-même, et l'extension française de SNOMED CT.
 - **IG Terminologies** — <https://interop.esante.gouv.fr/terminologies> — publie des versions figées des **NOS** (Nomenclatures des Objets de Santé), aux formats PDF/CSV/XML/SVS/FHIR.
-- **Convention de nommage** : `TRE_` (Terminologie de Référence), `JDV_` (Jeu De Valeurs, value set extrait d'une ou plusieurs TRE), `ASS_` (table d'ASSociation / ConceptMap entre ≥2 TRE/JDV). Format général : `<TYPE>_<code>_<label>`.
 
-Détails, exemples réels et conventions complètes : `references/terminologies.md`.
+Détails et exemples réels : `references/terminologies.md`.
 
 ## 4. Gouvernance CI-SIS
 
