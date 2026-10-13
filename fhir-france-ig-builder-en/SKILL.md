@@ -20,7 +20,7 @@ This skill is aimed at **authors and editors of French FHIR Implementation Guide
 
 Always start from a skeleton repo rather than building a project structure by hand. Full details: `references/demarrage-ig.md`.
 
-- Skeleton repo: **`FHIR/sample-ig`** for an IG outside the ANS ecosystem, **`ansforge/IG-modele`** for an ANS/ansforge IG (`ig.ini`, `sushi-config.yaml`, generation scripts).
+- Skeleton repo: **`FHIR/sample-ig`** for an IG outside the ANS/Interop-Santé ecosystem, **`ansforge/IG-modele`** for an ANS/ansforge IG, **`Interop-Sante/hl7.ig.fr.sample`** for an Interop-Santé IG (`ig.ini`, `sushi-config.yaml`, generation scripts).
 - Template (`ig.ini` > `template`): `fhir.base.template` by default (neutral, no logo); `hl7.fhir.template` only if the official HL7/FHIR look is explicitly wanted. Do not impose an organization-specific style by default.
 - Menus are declared in `sushi-config.yaml` (`menu:` key), never via a `menu.xml`.
 - `.md` files in `input/pagecontent/` must start at heading level `###` — levels `#` and `##` are generated automatically by the publisher.

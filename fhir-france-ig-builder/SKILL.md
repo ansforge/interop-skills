@@ -20,7 +20,7 @@ Ce skill s'adresse aux **auteurs et éditeurs d'Implementation Guides FHIR fran�
 
 Toujours partir d'un repo squelette plutôt que de construire une structure de projet à la main. Détails complets : `references/demarrage-ig.md`.
 
-- Squelette de base : **`FHIR/sample-ig`** pour un IG hors écosystème ANS, **`ansforge/IG-modele`** pour un IG ANS/ansforge (`ig.ini`, `sushi-config.yaml`, scripts de génération).
+- Squelette de base : **`FHIR/sample-ig`** pour un IG hors écosystème ANS/Interop-Santé, **`ansforge/IG-modele`** pour un IG ANS/ansforge, **`Interop-Sante/hl7.ig.fr.sample`** pour un IG Interop-Santé (`ig.ini`, `sushi-config.yaml`, scripts de génération).
 - Template (`ig.ini` > `template`) : `fhir.base.template` par défaut (neutre, sans logo) ; `hl7.fhir.template` seulement si l'apparence officielle HL7/FHIR est explicitement souhaitée. Ne pas imposer de style propre à un organisme par défaut.
 - Les menus se déclarent dans `sushi-config.yaml` (clé `menu:`), jamais via un `menu.xml`.
 - Les fichiers `.md` de `input/pagecontent/` doivent commencer au niveau `###` — les niveaux `#` et `##` sont générés automatiquement par le publisher.
