@@ -37,4 +37,4 @@
 
 ## Pour aller plus loin
 
-Pour les questions qui ne concernent pas la rédaction/publication d'un IG mais sa consommation (quelle version FHIR utiliser, quels IGs existent déjà, terminologies françaises, gouvernance CI-SIS), voir le skill `fhir-france` et son fichier `references/catalogue-igs.md` pour le catalogue des IGs français existants.
+Pour les questions qui ne concernent pas la rédaction/publication d'un IG mais sa consommation (quelle version FHIR utiliser, quels IGs existent déjà, terminologies françaises, gouvernance CI-SIS), voir le skill `fhir-france-implementer` et son fichier `references/catalogue-igs.md` pour le catalogue des IGs français existants.

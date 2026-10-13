@@ -1,6 +1,6 @@
 ---
 name: fhir-france-en
-description: "Guides developers who implement or produce FHIR resources in France (API, FHIR server, storage, batch...) — which FHIR version to use (R4 vs R5 vs R6), catalogue of published Implementation Guides to implement (FR Core, ANS/ansforge guides, Interop-Santé work), French terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions) and CI-SIS governance (doctrine, committee structure, how to request a missing spec). Does not cover writing/publishing an IG (FSH/SUSHI, release) — see the `ig-builder` skill for IG authors/editors. Use this skill proactively whenever a developer asks a question about FHIR in France to produce conformant resources — which version to choose, which IGs exist, where to find terminologies, how CI-SIS is governed. Content ages fast: check the date block at the top of SKILL.md, and re-verify sources if the date is old."
+description: "Guides developers who implement or produce FHIR resources in France (API, FHIR server, storage, batch...) — which FHIR version to use (R4 vs R5 vs R6), catalogue of published Implementation Guides to implement (FR Core, ANS/ansforge guides, Interop-Santé work), French terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions) and CI-SIS governance (doctrine, committee structure, how to request a missing spec). Does not cover writing/publishing an IG (FSH/SUSHI, release) — see the `fhir-france-ig-builder` skill for IG authors/editors. Use this skill proactively whenever a developer asks a question about FHIR in France to produce conformant resources — which version to choose, which IGs exist, where to find terminologies, how CI-SIS is governed. Content ages fast: check the date block at the top of SKILL.md, and re-verify sources if the date is old."
 ---
 
 # FHIR in France for developers producing FHIR resources
@@ -8,13 +8,13 @@ description: "Guides developers who implement or produce FHIR resources in Franc
 > **Content last updated: 2026-10-01**
 > This landscape moves fast (new IGs, status changes, terminology versions). Systematically check whether newer versions of the points below exist before answering with certainty.
 
-**Synchronized French twin**: `fhir-france/SKILL.md` is the reference version. Any content update here must be mirrored there (and vice versa).
+**Synchronized French twin**: `fhir-france-implementer/SKILL.md` is the reference version. Any content update here must be mirrored there (and vice versa).
 
 ## Purpose of this skill
 
 This skill is aimed at **developers who implement or produce FHIR resources** in a French system (API, FHIR server, data warehouse/storage, data-generation batch...) — not at Implementation Guide authors. It helps find **the right spec at the right time**: when faced with a FHIR France question, quickly point to the right IG, terminology, or doctrine rather than leaving the user to search alone or reinvent a solution that already has a specification. The more these specs are actually used, the better the French interoperability ecosystem works — this skill exists to increase their adoption, not just to archive information.
 
-**Out of scope**: writing an IG (FSH/SUSHI), its release process (`sushi-config.yaml`, `publication-request.json`) and the GitHub workflow of IG repos are not covered here — see the [`ig-builder`](../ig-builder/SKILL.md) skill, dedicated to IG authors/editors (currently French-only).
+**Out of scope**: writing an IG (FSH/SUSHI), its release process (`sushi-config.yaml`, `publication-request.json`) and the GitHub workflow of IG repos are not covered here — see the [`fhir-france-ig-builder`](../fhir-france-ig-builder/SKILL.md) skill, dedicated to IG authors/editors (currently French-only).
 
 **If no existing IG covers the use case being sought**: do not invent an ad hoc solution. Advise writing a **statement of need** (*expression de besoin*) to the ANS, the entry point of the CI-SIS governance process (Comité d'Instruction → prioritization by the COPIL → publication of a new IG — see `references/gouvernance-cisis.md`). This is the official path to bring a new spec into existence rather than working around the absence of a standard.
 
@@ -95,7 +95,7 @@ No major factual uncertainty is known as of the last update (previously open poi
 
 Follow the refresh checklist at the top of this file. Even if nothing has changed, update the date at the top: this tells a future reader (human or agent) that the content was recently verified and remains reliable as-is.
 
-Remember to mirror any content change in the synchronized French twin, `fhir-france/SKILL.md` (and conversely, bring over any change made there).
+Remember to mirror any content change in the synchronized French twin, `fhir-france-implementer/SKILL.md` (and conversely, bring over any change made there).
 
 ## 8. Feedback on specs
 

@@ -1,6 +1,6 @@
 {
-  "name": "ig-builder",
-  "displayName": "IG Builder",
+  "name": "fhir-france-ig-builder",
+  "displayName": "FHIR France IG Builder",
   "version": "1.0.0",
   "description": "Guide pour les auteurs/éditeurs d'IG FHIR français : démarrer un IG, conventions FSH/SUSHI, workflow Git/GitHub, préparation d'une release",
   "author": {
