@@ -23,18 +23,6 @@
 - **Version observed as of this file's last update (2026-10-01)**: v1.7.0 (to re-verify — this number changes regularly).
 - **Associated IG**: `ansforge/IG-terminologie-de-sante` / package `ans.fr.terminologies` (version 1.14.0, `final-text`, active), documents the NOS value sets in native FHIR form. Replaces the former `ansforge/IG-NOS` / `ans.fhir.fr.nos` (archived, last observed version 1.5.0) — no longer cite it as the current IG.
 
-## Terminology artifact naming convention
-
-Documented at <https://interop.esante.gouv.fr/terminologies/convention.html>. Three prefix families:
-
-| Prefix | Meaning | Corresponding FHIR type | Example |
-|---|---|---|---|
-| `TRE_` | Terminologie de Référence (Reference Terminology) | CodeSystem | `TRE_R75_InseeNAFrev2Niveau5` (INSEE NAF rev2 level 5 codes), `TRE_A03-ClasseDocument` |
-| `JDV_` | Jeu De Valeurs (Value Set), extracted from one or more TRE | ValueSet | `JDV_J07_XdsTypeCode_CISIS`, `JDV_J105_EnsembleDiplome_RASS` |
-| `ASS_` | Table d'ASSociation (Association table) — mapping between ≥2 TRE/JDV | ConceptMap | `ASS_A23_ASR_ActiviteModaliteForme` |
-
-**General format**: `<TYPE>_<code>_<label>`, e.g. `TRE_A03-ClasseDocument` (note that the separator between code and label can vary — hyphen or underscore depending on the existing artifact — check the most recent example before reproducing the pattern).
-
 ## For comparison: international terminologies
 
 - International HL7 terminology registry: <https://terminology.hl7.org/en>

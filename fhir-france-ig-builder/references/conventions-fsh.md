@@ -31,7 +31,7 @@ Tous les alias FSH doivent être centralisés dans un **unique fichier `aliases.
 
 - Le binding principal (extensible ou required selon le cas) va dans le binding par défaut de l'élément.
 - Les bindings additionnels (`additional binding`) sont réservés aux ValueSets alternatifs — ne pas les utiliser comme binding par défaut.
-- Conventions de nommage des terminologies elles-mêmes (`TRE_`, `JDV_`, `ASS_`) et serveurs de référence (SMT, IG Terminologies) : voir `fhir-france-implementer/references/terminologies.md` — ne pas dupliquer ces conventions ici, ce skill ne couvre que la rédaction FSH.
+- Serveurs de référence des terminologies elles-mêmes (SMT, IG Terminologies) : voir `fhir-france-implementer/references/terminologies.md` — pas dupliqué ici, ce skill ne couvre que la rédaction FSH.
 
 ## Cohérence avec `sushi-config.yaml`
 

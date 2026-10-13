@@ -10,7 +10,7 @@ If you implement or produce FHIR resources in France (API, FHIR server, storage,
 
 ## Available skills
 
-- **[fhir-france-implementer-en](fhir-france-implementer-en/SKILL.md)** — For developers who implement or produce FHIR resources (API, FHIR server, storage, batch...): which FHIR version to use (R4/R5/R6, EHDS alignment), catalogue of published IGs (FR Core, ANS guides, OSIRIS...), terminologies (SMT, NOS, TRE_/JDV_/ASS_ conventions), CI-SIS governance. Does not cover IG authoring/publishing (FSH/SUSHI, release) — see `fhir-france-ig-builder-en` below.
+- **[fhir-france-implementer-en](fhir-france-implementer-en/SKILL.md)** — For developers who implement or produce FHIR resources (API, FHIR server, storage, batch...): which FHIR version to use (R4/R5/R6, EHDS alignment), catalogue of published IGs (FR Core, ANS guides, OSIRIS...), terminologies (SMT, NOS), CI-SIS governance. Does not cover IG authoring/publishing (FSH/SUSHI, release) — see `fhir-france-ig-builder-en` below.
 - **[fhir-france-implementer](fhir-france-implementer/SKILL.md)** — Synchronized French twin of `fhir-france-implementer-en`, same content, same sources.
 - **[fhir-france-ig-builder-en](fhir-france-ig-builder-en/SKILL.md)** — For French FHIR IG authors/editors: starting an IG from the ANS template repo, FSH/SUSHI conventions (naming, aliases, bindings), Git/GitHub workflow (branch + PR, ANS template), release preparation (CI-SIS status ↔ `sushi-config.yaml`/`publication-request.json` mapping, change-log, milestones). Does not cover consuming already-published FHIR resources — see `fhir-france-implementer-en` above.
 - **[fhir-france-ig-builder](fhir-france-ig-builder/SKILL.md)** — Synchronized French twin of `fhir-france-ig-builder-en`, same content, same sources.

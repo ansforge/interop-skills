@@ -33,7 +33,6 @@ Full details, naming conventions by artifact type, and authoritative source: `re
 - Before creating a new `Profile`, check whether an existing profile (FR Core, an ANS référentiel guide...) already covers the need and inherit from it: see the `fhir-france-implementer-en` skill and its `references/catalogue-igs.md` file (not duplicated here).
 - All aliases in a single `aliases.fsh` — do not define any elsewhere.
 - Default terminology binding: the main binding (extensible/required); reserve additional bindings for alternative ValueSets.
-- `TRE_`/`JDV_`/`ASS_` terminology naming conventions: see `fhir-france-implementer-en/references/terminologies.md` (not duplicated here).
 - **After any change to a `.fsh` file or `sushi-config.yaml`, run `sushi .` and fix all errors before committing or pushing.**
 
 ## 3. Git/GitHub workflow
